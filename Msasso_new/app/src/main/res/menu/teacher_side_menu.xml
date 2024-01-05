@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_schedules"
+        android:icon="@drawable/ic_icon_sehedule"
+        android:iconTint="@null"
+        android:title="Schedules &amp; Events" />
+
+    <item
+        android:id="@+id/navigation_todo"
+        android:icon="@drawable/ic_menu_todo"
+        android:iconTint="@null"
+        android:title="ToDo" />
+
+    <item
+        android:id="@+id/navigation_tests"
+        android:icon="@drawable/ic_icon_test"
+        android:iconTint="@null"
+        android:title="Test" />
+
+    <item
+        android:id="@+id/navigation_course"
+        android:icon="@drawable/ic_icon_course"
+        android:visible="false"
+        android:iconTint="#f9eab0"
+        android:title="Course" />
+    <item
+        android:id="@+id/navigation_circulars"
+        android:icon="@drawable/ic_icon_circulars"
+        android:iconTint="@null"
+        android:title="Circulars" />
+    <item
+        android:id="@+id/navigation_calendarevents"
+        android:icon="@drawable/ic_icon_calendarevents"
+        android:iconTint="@null"
+        android:visible="false"
+        android:title="Calendar Events" />
+    <item
+        android:id="@+id/navigation_my_attendance"
+        android:icon="@drawable/ic_icon_myattendence"
+        android:iconTint="@null"
+        android:title="My Attendance" />
+    <item
+        android:id="@+id/navigation_leaves"
+        android:icon="@drawable/ic_icon_leaves"
+        android:iconTint="@null"
+        android:title="Leaves" />
+    <item
+        android:id="@+id/navigation_directorsmessage"
+        android:icon="@drawable/ic_icon_directormessage"
+        android:iconTint="@null"
+        android:title="Director's Message" />
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_menu_gallery"
+        android:iconTint="@null"
+        android:title="Gallery" />
+    <item
+        android:id="@+id/navigation_terms_conditions"
+        android:icon="@drawable/ic_menu_flat"
+        android:iconTint="@null"
+        android:title="Terms &amp; Conditions" />
+    <item
+        android:id="@+id/navigation_log_out"
+        android:icon="@drawable/ic_menu_logut_icon"
+        android:iconTint="@null"
+        android:title="Logout" />
+
+</menu>

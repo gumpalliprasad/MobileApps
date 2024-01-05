@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  /*
+   * Created by SriRam on 6/9/18 5:51 PM
+   * Copyright (c) @CloudEdz 2018 . All rights reserved.
+   * Last modified 6/9/18 5:49 PM
+   */
+  -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:textColor="#000000"
+    android:textFontWeight="600"
+    android:fontFamily="@font/lato"
+    android:textSize="18sp" />

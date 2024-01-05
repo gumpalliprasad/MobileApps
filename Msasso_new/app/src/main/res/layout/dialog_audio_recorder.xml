@@ -1,0 +1,100 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Audio Clips"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_timer"
+            android:fontFamily="@font/lato"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"/>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_audio_record"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_green_hamburger"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/iv_record"
+            android:scaleType="center"
+            android:src="@drawable/ic_mic_small_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_blue_audio_circle"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/iv_stop"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stop_audio"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,266 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/bg_profile_header"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_white_back"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Profile"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/user_default"/>
+                <LinearLayout
+                    android:padding="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ashish Kumar"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/lato"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Designation"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/lato"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tv_emp_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50012"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/lato"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_border_6">
+
+                    <ImageView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit_details"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:gravity="top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textStyle="bold"
+                        android:textColor="#494949"
+                        android:fontFamily="@font/lato"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year of joining"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_yoj"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emergency Contact"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_parent_num"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 9876543210"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subjects"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textColor="#000000"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_subjects"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maths"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

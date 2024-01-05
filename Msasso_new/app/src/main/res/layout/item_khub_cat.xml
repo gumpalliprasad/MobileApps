@@ -1,0 +1,35 @@
+<LinearLayout
+    android:id="@+id/ll_bg"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_cat_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_khub_extreme" />
+
+    <TextView
+        android:id="@+id/tv_cat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Xtreme Learning"
+        android:maxLines="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+</LinearLayout>

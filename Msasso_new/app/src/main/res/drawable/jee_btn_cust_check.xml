@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  /*
+   * Created by SriRam on 6/9/18 5:51 PM
+   * Copyright (c) @CloudEdz 2018 . All rights reserved.
+   * Last modified 6/9/18 5:49 PM
+   */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="4dp" />
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="1dp"
+        android:color="#b2b2b2" />
+</shape>

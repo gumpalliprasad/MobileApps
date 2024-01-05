@@ -1,0 +1,39 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_session_recordings">
+        <TextView
+            android:id="@+id/tv_vid_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number System"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/lato"/>
+        <TextView
+            android:id="@+id/tv_sub_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

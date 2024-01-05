@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_arena_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_arena_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato"
+            android:lines="1"
+            android:text="Easy Tips to write Exams"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="14sp" />
+        <ImageView
+            android:visibility="gone"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_del"
+            android:src="@drawable/ic_delete_hw_section" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#494949"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:textFontWeight="500"
+                android:text="12"
+                android:drawableLeft="@drawable/ic_heart_border"
+                android:fontFamily="@font/lato"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato"
+            android:lineHeight="12sp"
+            android:lines="3"
+            android:text="small description from the article
+here. small description from the article
+here"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_student_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato"
+                android:lineHeight="12sp"
+                android:text="By Chivukula Teja"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato"
+                android:lineHeight="12sp"
+                android:text="10 days ago"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

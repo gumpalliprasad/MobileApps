@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context=".QBox.AskADoubt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:text="Suggested Questions"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/sv_qbox_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_6"
+        android:elevation="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Type Some Text ..."
+        android:searchIcon="@android:drawable/ic_menu_search"
+        app:queryBackground="@android:color/transparent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        android:background="#0D000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:text="No Suggestions Found"
+            android:fontFamily="@font/lato"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0D000000"
+            tools:listitem="@layout/item_qbox_suggestion"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 22/7/19 4:54 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 23/6/19 2:11 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TopicMockTestInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato"
+            android:gravity="start|center"
+            android:lines="1"
+            android:text="Topic MockTest Info"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_chapName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/lato"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Chapter/TopicName"
+                        android:background="@drawable/rounded_corners_f5f9ff"
+                        android:textColor="#db3939"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29.6dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="26.7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:lineSpacingExtra="6dp"
+                            android:text="Total Questions:"
+                            android:textColor="#8b000000"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:gravity="end"
+                            android:lineSpacingExtra="10dp"
+                            android:text="7"
+                            android:textAlignment="textEnd"
+                            android:textColor="#de000000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29.6dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="26.7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:lineSpacingExtra="6dp"
+                            android:text="Total Time:"
+                            android:textColor="#8b000000"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:gravity="end"
+                            android:lineSpacingExtra="10dp"
+                            android:text="15 Mins"
+                            android:textAlignment="textEnd"
+                            android:textColor="#de000000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29.6dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="24.8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:gravity="center_horizontal"
+                            android:text="Correct Answer"
+                            android:textColor="#0eb929"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:fontFamily="@font/lato"
+                            android:text="Wrong Answer"
+                            android:textAlignment="textEnd"
+                            android:textColor="#db3939"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29.6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="24.8dp"
+                        android:layout_marginBottom="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:gravity="end"
+                            android:text="+1 Marks"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0eb929"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:gravity="end"
+                            android:text="0 Mark"
+                            android:textAlignment="textEnd"
+                            android:textColor="#db3939"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="36dp"-->
+                    <!--android:layout_marginTop="41dp"-->
+                    <!--android:layout_marginBottom="100dp"-->
+                    <!--android:fontFamily="@font/lato"-->
+                    <!--android:text="Need to add more instructions"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="normal" />-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_takeTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_grad_next_button"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Take Test"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_mock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_recTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Previous Test Reports"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_reports"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_no_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text="No reports available. Take Test and come back."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

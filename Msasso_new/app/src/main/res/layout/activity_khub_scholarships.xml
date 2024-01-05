@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="ScholarShip Form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/_626262"
+                android:textSize="16sp"
+                android:text="About the ScholarShip : "/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Please read the Terms &amp; Conditions and Check the Box to Apply for Schorlarship"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Apply for scholarship"/>
+</LinearLayout>

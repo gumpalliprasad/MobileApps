@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"/>
+
+
+        <TextView
+            android:fontFamily="@font/lato"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textFontWeight="700"
+            android:textColor="#000000"
+            android:text="Students"
+            />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="0/0"
+            android:textColor="#fd3cbfbf"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_descr_stdnts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"/>
+
+
+
+</LinearLayout>

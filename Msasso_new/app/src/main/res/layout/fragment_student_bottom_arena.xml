@@ -1,0 +1,432 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="80dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:id="@+id/rv_arena"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        />-->
+
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:id="@+id/ll_stories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Stories/Articles"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"/>
+            <TextView
+                android:id="@+id/tv_view_all_stories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="500"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rv_stories"
+            android:layout_below="@id/ll_stories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:id="@+id/ll_quizzes"
+            android:layout_below="@id/rv_stories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Quizzes"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"/>
+            <TextView
+                android:id="@+id/tv_v_all_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="500"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rv_quizes"
+            android:layout_below="@id/ll_quizzes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:id="@+id/ll_flash_cards"
+            android:layout_below="@id/rv_quizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Flash Cards"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"/>
+            <TextView
+                android:id="@+id/tv_v_all_fc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="500"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rv_flash_cards"
+            android:layout_below="@id/ll_flash_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:id="@+id/ll_polls"
+            android:layout_below="@id/rv_flash_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Polls"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"/>
+            <TextView
+                android:id="@+id/tv_v_all_polls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="500"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rv_polls"
+            android:layout_below="@id/ll_polls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_blue_grad_rad_8"
+            android:layout_below="@id/rv_polls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Arena"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_name"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_arena_stories"
+                        android:layout_margin="5dp"
+                        android:layout_width="0dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.60">
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#EE9D74">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="My Stories"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/lato"
+                                android:textFontWeight="700"
+                                android:textColor="#000000"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.30"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:layout_margin="5dp"/>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_video_arena"
+                        android:layout_margin="5dp"
+                        android:layout_width="0dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="0.30">
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#99CBFF">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="My\nVlogs"
+                                android:gravity="right"
+                                android:layout_gravity="right|bottom"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/lato"
+                                android:textFontWeight="700"
+                                android:textColor="#000000"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/l1"
+                    android:id="@+id/l3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_audio_arena"
+                        android:layout_margin="5dp"
+                        android:layout_width="0dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="0.30">
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#B2E4E5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="My\nPodcasts"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/lato"
+                                android:textFontWeight="700"
+                                android:textColor="#000000"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/l2"
+                    android:id="@+id/l4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.30"
+                        android:layout_margin="5dp"/>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_arena_quiz"
+                        android:layout_margin="5dp"
+                        android:layout_width="0dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.60">
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FFE4B5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="My Quizzes"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/lato"
+                                android:textFontWeight="700"
+                                android:textColor="#000000"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_flash"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="0.60">
+                    <LinearLayout
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#A5A2C9">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="My\nFlash Cards"
+                            android:gravity="right"
+                            android:layout_gravity="bottom"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato"
+                            android:textFontWeight="700"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_arena_polls"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="90dp">
+                    <LinearLayout
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#EE9D74">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Polls"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato"
+                            android:textFontWeight="700"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

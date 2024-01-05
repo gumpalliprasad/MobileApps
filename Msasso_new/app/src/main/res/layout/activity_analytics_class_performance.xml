@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 14/8/19 12:35 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 14/8/19 12:35 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AnalyticsClassSubPerformance">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Analytics"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Average Score (%)"
+                android:textColor="#8e8e93"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif"
+                android:layout_weight="1"
+                android:letterSpacing="0.04"
+                android:text="66%"
+                android:textColor="#222222"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Time Spent"
+                android:textColor="#8e8e93"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_time_spent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="57dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.04"
+                android:text="1:06:22"
+                android:textColor="#222222"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Tests Taken"
+                android:textColor="#8e8e93"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_test_taken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.04"
+                android:text="22"
+                android:textColor="#222222"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.06"
+        android:text="Subject Performance"
+        android:textColor="#222222"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sub_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

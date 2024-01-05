@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 22/9/19 4:25 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 21/9/19 4:35 PM
+  ~  */
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_white14sh"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Overall Performance"
+                android:textColor="#c0000000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="Total Tests Taken"
+                    android:textColor="#8e8e93"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="Average Score (%)"
+                    android:textColor="#8e8e93"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="Time Spent"
+                    android:textColor="#8e8e93"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_totalTestsCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalPercentage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalTimeSpent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corners_white14sh"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Number of Tests Taken"
+                android:textColor="#c0000000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/gl_testsTaken"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_no_exams"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingTop="20dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="20dp"
+                android:text="No Test is taken"
+                android:textColor="#2196F3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_classwiseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.06"
+            android:text="Classes"
+            android:textColor="#222222"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_classList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

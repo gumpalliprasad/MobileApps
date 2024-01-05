@@ -1,0 +1,91 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Questions"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_pending"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:background="@drawable/underline"
+            android:padding="8dp"
+            android:textFontWeight="700"/>
+        <TextView
+            android:id="@+id/tv_approved"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Approved"
+            android:textSize="18sp"
+            android:textColor="#64494649"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:textFontWeight="700"/>
+        <TextView
+            android:id="@+id/tv_rejected"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Rejected"
+            android:textSize="18sp"
+            android:textColor="#64494649"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:textFontWeight="700"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_qbox_questions"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

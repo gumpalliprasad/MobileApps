@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+   <TextView
+       android:id="@+id/tv_date"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="16sp"
+       android:text="23/10/2020"
+       android:gravity="center"
+       android:fontFamily="@font/lato"
+       android:textFontWeight="700"
+       android:textColor="#000000"/>
+    
+    <ListView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_schedule_60"
+        android:id="@+id/list_schedules"/>
+
+</LinearLayout>

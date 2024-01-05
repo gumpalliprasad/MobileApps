@@ -1,0 +1,185 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_add_image_cover"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_add_image"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arena_add_image"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to add image"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:text="Quiz Title"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:id="@+id/et_quiz_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_border_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_quiz_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_border_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:text="Number of Questions"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_no_of_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:inputType="number"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_border_10"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:text="Time for Each question"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_question_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="600"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:background="@drawable/bg_border_10"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="Continue"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_2e2e8b"/>
+
+    </LinearLayout>
+</ScrollView>

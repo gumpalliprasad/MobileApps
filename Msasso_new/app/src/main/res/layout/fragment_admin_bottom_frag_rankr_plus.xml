@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 24/10/19 6:07 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 24/10/19 6:06 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="0dp"
+    tools:context=".Fragments.AdminBottomFragRankrPlus">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:letterSpacing="0.06"
+          android:text="rankr+"
+          android:textColor="@color/_222222"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_settings"
+          android:id="@+id/set"/>
+  </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:id="@+id/ll_manageMembers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gallery" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Manage Members"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_staffAttendance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_attendance" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Staff Attendance"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <!--<TableLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="13dp">-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="HW Left"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="HW Complete"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="Diary Notes"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="normal" />-->
+                    <!--</TableRow>-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="2"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="2"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="4"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="normal" />-->
+                    <!--</TableRow>-->
+
+                    <!--</TableLayout>-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_calendar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_cal" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Calender &amp; Events"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_transport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bus" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Transport"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+
+                    <!--<TableLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="13dp">-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="Today Classes"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--</TableRow>-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="Maths, Science,  Hindi…"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textStyle="normal" />-->
+
+
+                    <!--</TableRow>-->
+
+                    <!--</TableLayout>-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_gallery" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Gallery"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <!--<TableLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="13dp">-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="Total Images"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="Newly Added"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="normal" />-->
+                    <!--</TableRow>-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="122"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="4 New"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="normal" />-->
+
+                    <!--</TableRow>-->
+
+                    <!--</TableLayout>-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_messg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_msg_small" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Messages"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <!--<TableLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="13dp">-->
+
+                    <!--<TableRow>-->
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="Unread"-->
+                    <!--android:textColor="#8e8e93"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="normal" />-->
+                    <!--</TableRow>-->
+
+                    <!--<TableRow>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:text="None"-->
+                    <!--android:textColor="@color/_222222"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="normal" />-->
+                    <!--</TableRow>-->
+
+                    <!--</TableLayout>-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_circular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_white5p15"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_circulars" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Circulars"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

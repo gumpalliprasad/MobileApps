@@ -1,0 +1,127 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:background="@drawable/ic_sub_with_sub"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/lato"
+                android:id="@+id/tv_module_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#ffffff"
+                android:text="Modules"
+                />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:id="@+id/iv_cos_complete"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_khub_co_com"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/tv_progress"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="0%"
+                   android:textColor="@color/white"
+                   android:textSize="14sp"
+                   android:fontFamily="@font/lato"/>
+
+               <com.google.android.material.progressindicator.ProgressIndicator
+                   android:id="@+id/progressind"
+                   style="@style/Widget.MaterialComponents.ProgressIndicator.Linear.Determinate"
+                   app:indicatorSize="5dp"
+                   android:layout_width="200dp"
+                   android:layout_marginStart="8dp"
+                   android:layout_height="wrap_content"
+                   app:indicatorColor="#ffffff"
+                   android:progress="20"
+                   app:indicatorCornerRadius="5dp"/>
+
+
+
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:padding="8dp"
+           android:background="#FFEEEE"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/tv_startModule"
+               android:fontFamily="@font/lato"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:textColor="#494949"
+               android:textFontWeight="700"
+               android:text="Start this module"
+               />
+           <TextView
+               android:visibility="gone"
+               android:fontFamily="@font/lato"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:textColor="#494949"
+               android:textFontWeight="400"
+               android:text="Estimated - "
+               />
+
+           <TextView
+               android:visibility="gone"
+               android:fontFamily="@font/lato"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:textColor="#494949"
+               android:textFontWeight="700"
+               android:text="12 Hrs"
+               />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

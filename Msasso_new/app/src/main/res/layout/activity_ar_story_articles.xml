@@ -1,0 +1,115 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Arena"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular Articles"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_no_popular_article"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="No Popular Articles"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#64000000"
+                android:fontFamily="@font/lato"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/rv_popular_articles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Articles"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"/>
+
+            <TextView
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/tv_no_recent_articles"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="No Articles to display"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textFontWeight="500"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/rv_recent_articles"
+                android:layout_below="@id/ll_stories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

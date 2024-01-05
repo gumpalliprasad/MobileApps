@@ -1,0 +1,101 @@
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/prev_month"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:src="@drawable/ic_white_left" />-->
+
+            <TextView
+                android:drawableRight="@drawable/ic_drop_down"
+                android:fontFamily="@font/lato"
+                android:id="@+id/tv_month_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:text="August 2019"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:textStyle="bold" />
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/next_month"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:src="@drawable/ic_white_right" />-->
+        </LinearLayout>
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            app:compactCalendarDisplayOtherMonthDays="true"
+            app:compactCalendarOtherMonthDaysTextColor="#32000000"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:compactCalendarCurrentDayTextColor="#42CBA2"
+            app:compactCalendarBackgroundColor="@android:color/transparent"
+            app:compactCalendarCurrentDayIndicatorStyle="no_fill_large_indicator"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#42CBA2"
+            app:compactCalendarCurrentSelectedDayIndicatorStyle="fill_large_indicator"
+            app:compactCalendarCurrentSelectedDayTextColor="#ffffff"
+            app:compactCalendarMultiEventIndicatorColor="#222222"
+            app:compactCalendarTextColor="#222222"
+            app:compactCalendarTextSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Events"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#494949"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:id="@+id/rv_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

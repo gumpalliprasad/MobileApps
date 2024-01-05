@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grad_main"
+    android:orientation="vertical"
+    tools:context=".ChaptersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_white_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/sofia_pro_bold"
+            android:gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="Jee Mains"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_sub"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_courses_maths"/>
+
+        <TextView
+            android:id="@+id/tv_chapname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:fontFamily="@font/muli_bold"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:text="PHYSICS"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_noChapters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/muli_bold"
+            android:visibility="gone"
+            android:text="No Chapters Available yet! Wiil be Update Soon"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_chapters"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_jee_chapters"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

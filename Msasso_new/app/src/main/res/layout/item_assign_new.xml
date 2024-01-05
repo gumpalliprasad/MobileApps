@@ -1,0 +1,125 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:padding="15dp"
+        android:background="@drawable/bg_grad_pending_assignments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_sub"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"/>
+        <TextView
+            android:id="@+id/tv_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13-08-2020"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ch"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number System"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_green_tick"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_submitted_assignment"/>
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/ll_keys"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_submitted_assignment"/>
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_key_assign"/>
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_assignment_vid"/>
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_teacher_review_assignment"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submission Date"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:alpha="0.75"
+                android:fontFamily="@font/lato"/>
+            <TextView
+                android:id="@+id/tv_submit_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22-08-2020"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/lato"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

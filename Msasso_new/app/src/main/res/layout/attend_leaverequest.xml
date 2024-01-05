@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 24/10/19 6:07 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 24/10/19 6:06 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_name_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/circle_color"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_profile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_default"
+        android:visibility="gone"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        tools:text="Lalith" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_tick_greenbg"
+            android:text="Accept" />
+
+        <TextView
+            android:id="@+id/tv_rejected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableTop="@drawable/ic_cross_redbg"
+            android:text="Reject" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/ic_att_absentinfo"/>
+
+</LinearLayout>

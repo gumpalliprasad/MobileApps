@@ -1,0 +1,35 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_sub_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/bg_maths_square_grad"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_subject"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_maths_icon_white"/>
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

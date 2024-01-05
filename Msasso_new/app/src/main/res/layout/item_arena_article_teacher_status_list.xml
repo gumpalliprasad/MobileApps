@@ -1,0 +1,66 @@
+<androidx.cardview.widget.CardView android:layout_below="@id/ll_pending"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+   android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/fl_bg"
+        android:background="@drawable/bg_palet_d18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ellipse"/>
+
+        <LinearLayout
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/tv_article_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Quiz on Sports"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato"
+                android:textFontWeight="700"
+                android:lines="1"
+                android:ellipsize="end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_created_by"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Created By Kiran"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lato"
+                    android:textFontWeight="400"/>
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Created on 5 Dec 2020"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lato"
+                    android:textFontWeight="400"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

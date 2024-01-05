@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_qbox_red"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableBottom="@android:drawable/ic_menu_camera"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="Ask a Question"
+                android:textColor="@android:color/white"
+                android:textFontWeight="400"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_25ffffff_8"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Type Your Question"
+                android:textColor="@android:color/white"
+                android:textFontWeight="400"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/bg_border_6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_filter_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Filters Applied"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/iv_filter_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_close_white_border"
+                    android:src="@drawable/ic_close_black"/>
+
+
+            </LinearLayout>
+
+
+            <SearchView
+                android:id="@+id/sv_qbox_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_border_6"
+                android:elevation="4dp"
+                android:inputType="none"
+                android:visibility="gone"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="No Filters Applied"
+                android:searchIcon="@null"
+                app:queryBackground="@android:color/transparent" />
+
+
+            <ImageView
+                android:id="@+id/iv_qbox_filter"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_qbox_filter" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:tint="@color/black"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_search"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_my_doubts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_qbox_ff2d2d_round"
+            android:fontFamily="@font/lato"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="My Doubts"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_qbox"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/black"
+            android:padding="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_qbox_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp" />
+
+        <TextView
+            android:id="@+id/tv_no_questions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato"
+            android:text="No Questions Available"/>
+    </LinearLayout>
+</ScrollView>
+

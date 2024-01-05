@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 25/7/19 3:37 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 25/7/19 3:37 AM
+  ~  */
+  -->
+
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"
+        android:orientation="vertical"
+        tools:context=".MockTestResult">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lato"
+            android:text="Score Card"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Marks are based on answered questions"
+            android:textColor="#80ffffff"
+            android:textSize="13dp"
+            android:textStyle="normal" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_ms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/lato"
+                            android:maxLines="1"
+                            android:text="Marks Scored"
+                            android:textColor="#80ffffff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_totalmarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/lato"
+                            android:text="39"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/lato"
+                            android:maxLines="1"
+                            android:text="Weightage (%)"
+                            android:textColor="#80ffffff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_totalpercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/lato"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="34%"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Remark"
+                            android:textColor="#80ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_rank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/lato"
+                            android:singleLine="true"
+                            android:text="A+"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/idPieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="1dp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_subscores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_sub_scorecard" />
+
+                <LinearLayout
+                    android:id="@+id/ll_notclassresults"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center|start"
+                            android:text="@string/correct_answer"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_correct_marks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center|start"
+                            android:text="@string/wrong_answer"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_wrong_marks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center|start"
+                            android:text="@string/unanswered"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_unanswered_marks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="Subject"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="Marks"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="MATHS (30)"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="PHYSICS (30)"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="CHEMISTRY (30)"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="TOTAL(90)"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_total_marks"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="39"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_corners_white"
+            android:onClick="onViewClicked"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_review_test" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Review Test"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_close_white_border"
+            android:padding="12dp"
+            android:src="@drawable/ic_cross_white" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

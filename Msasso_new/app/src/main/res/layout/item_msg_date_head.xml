@@ -1,0 +1,54 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 26/9/19 12:13 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 26/9/19 12:13 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="#40494949"
+        android:layout_height="1dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/tv_date_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="TODAY"
+            android:textColor="#BF494949"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="#40494949"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

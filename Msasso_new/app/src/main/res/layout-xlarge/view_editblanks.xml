@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="35dp"
+    android:textSize="18dp"
+    android:gravity="center"
+    android:id="@+id/et_blank"
+    android:inputType="text"
+    android:imeOptions="actionDone"
+    android:layout_height="match_parent">
+
+</EditText>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 14/8/19 12:35 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 14/8/19 12:35 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="90dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_test_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="IIT Foundation"
+            android:textColor="#8e8e93"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_test_taken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="40"
+            android:textColor="#003c82"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#8a96a0" />
+</LinearLayout>

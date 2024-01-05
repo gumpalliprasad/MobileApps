@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="38dp">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black"
+            android:padding="10dp"
+            android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fd8902"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            android:text="Please Confirm your Identity" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_white_b007fbe"
+            android:textColor="@color/_007fbe"
+            android:text="Confirm Phone Number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            android:background="@drawable/bg_white_b007fbe"
+            android:textColor="@color/_007fbe"
+            android:text="Confirm D.O.B" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,291 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#CC000000"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_presentations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_document"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Uploads"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_background"/>
+            <ImageView
+                android:layout_centerInParent="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upload_arena"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_presentations"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presentations"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_background"/>
+            <ImageView
+                android:layout_centerInParent="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_presentation_arena"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_video"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIdeo Clips"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_background"/>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_video_arena"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_flash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_audio"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio Clips"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_background"/>
+            <ImageView
+                android:layout_centerInParent="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_music_arena"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_quizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_flash"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash Cards"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_background"/>
+            <ImageView
+                android:layout_centerInParent="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flash_arena"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_quizes"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quizzes"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fab_background"/>
+            <ImageView
+                android:layout_centerInParent="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_quizzes"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/fb_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_articles"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:id="@+id/articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Articles"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            />
+        <RelativeLayout
+            android:id="@+id/fb_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fab_background"/>
+        <ImageView
+            android:layout_centerInParent="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_article_arena"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fb_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fab_background"/>
+        <ImageView
+            android:layout_centerInParent="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross_white"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

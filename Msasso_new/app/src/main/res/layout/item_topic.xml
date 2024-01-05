@@ -1,0 +1,53 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/ll_topic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_topic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Topic Name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_topic_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                android:text="By Chandrashekhar"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>

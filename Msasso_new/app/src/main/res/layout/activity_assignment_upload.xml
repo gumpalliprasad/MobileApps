@@ -1,0 +1,59 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assignments"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_assign_files"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_submit_button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/bg_grad_tab_select"
+        android:gravity="center"
+        android:layout_margin="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+</LinearLayout>

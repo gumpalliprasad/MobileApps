@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 14/8/19 12:35 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 14/8/19 12:35 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/analyticsTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/black"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@android:color/black" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/analyticsPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

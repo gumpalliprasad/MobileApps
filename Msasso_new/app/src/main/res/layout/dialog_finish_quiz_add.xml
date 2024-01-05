@@ -1,0 +1,84 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Quiz On Sports - MCQ"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dialog_finish_feedback"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Quiz Has Been Saved\nIn Drafts"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lato"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Please Check The Status \nIn My Quizzes Section"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:fontFamily="@font/lato"/>
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:text="Continue"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_bg_green"/>
+
+</LinearLayout>

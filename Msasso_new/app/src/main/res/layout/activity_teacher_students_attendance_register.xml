@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 24/10/19 6:07 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 23/10/19 11:23 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TeacherStudentsAttendanceRegister">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/ll_attOverView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Late"
+                android:textColor="@color/_222222"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_lateCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ecaa27"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Absent"
+                android:textColor="@color/_222222"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_absentCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#6fdaa0"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Present"
+                android:textColor="@color/_222222"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_presentCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff4939"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="previousDay" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif"
+                android:onClick="showCalendar"
+                android:text="00, March 0000"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/img_nextdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="nextDay"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_lrcout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_grad_leavereq"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="Leave Requests"
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_corners_blue14sh0pad"
+            android:fontFamily="sans-serif"
+            android:onClick="editAttendance"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:text="Edit Attendance"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sendSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded_corners_white14sh"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:text="Send SMS"
+            android:textColor="#b3000000"
+            android:visibility="invisible"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_stdnList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_holiday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Holiday"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>

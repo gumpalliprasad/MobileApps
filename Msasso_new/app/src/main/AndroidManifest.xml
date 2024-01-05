@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="myschoolapp.com.gsnedutech">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
+<!--    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />-->
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC"
+        android:required="false" />
+    <uses-permission
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleInstance"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubPPTPdfListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubImageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.TeacherPollReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArPollDisplayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArAddPoll"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.Trial.ArAddQuizNew"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArPollDisplayRejectedActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.FlashCardsDisplayRejected"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaStoryDisplayRejected"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaQuizDisplayRejected"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ArenaVideoDisplayRejected"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaAudioDisplayRejected"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubFlipDetailed"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaVideoDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaAudioDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.FlashCardsDisplayNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlIneTest.OTStudentCompletedTest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlIneTest.OTStudentTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlIneTest.OTStudentOnlineTestResult"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlIneTest.OTStudentOnlineTestReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlIneTest.OTStudentOnlineTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlIneTest.OTStudentTestOnlineCompleted"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.RegNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QBox.SuggestedQuestions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QBox.QboxMyDoubts"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QBox.TeacherQBoxQuestions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QBox.TeacherQBoxClsSec"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QBox.QboxQuestionDetails"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ViewAllArticles"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.TeacherArenaQuizReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.TeacherArenaFlashCardReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.TeacherArenaArticleListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.TeacherArenaArticleReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArQuizApprovalActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.FlashCardsDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaQuizDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentArenaFiles"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentArenaRecordings"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeAdvanced.Files.AdvJeeMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeAdvanced.Files.AdvJeeSubjectsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeAdvanced.Files.AdvJeeTest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Neet.NeetTest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Neet.NeetExpectedQuestions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Neet.NeetSubjectsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Neet.NeetChapterQuestions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Neet.NeetChaptersActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeMains.files.JeeMainsMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeMains.files.JeeChaptersActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeMains.files.JeeChapterQuestions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeMains.files.JeeTest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JeeMains.files.JeeExpectedQuestions"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.AddArenaArticle"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentsNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.NewReg"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.FlashCardsActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArAddFlashCards"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name="myschoolapp.com.gsnedutech.Util.FireMsgService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="myschoolapp.com.gsnedutech.ScheduleWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/schedule_widget_info" />
+        </receiver>
+
+        <service
+            android:name="myschoolapp.com.gsnedutech.WidgetService"
+            android:exported="true"
+            android:permission="android.permission.BIND_REMOTEVIEWS" /> <!-- KHub Starts -->
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubMyCoursesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.BrainPowerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubAllCats"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubScholarships"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubCategoryDetail"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubCourseInfoNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubSubmoduleListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubCourseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubQuizActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubFlipActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubFlipActivityNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubBlankText"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.khub.KhubTextBookActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" /> <!-- Khub Ends -->
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.LocalImageDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.LocalPdfViewer"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.LocalVideoPlayer"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArAddQuizQuestion"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.AddArenaVideoClips"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArStoryArticles"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherLiveExamDetails"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CompletedToDoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherAddingHomeWorkSections.TeacherHWAddingWithSections"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherClassLivePreviousExams"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherClassLiveRecordedClasses"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentLiveExamsTabs"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentLiveClassesTabs"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.EditTeacherProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHwSubmissionDisplayNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHwDisplayNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ParentStudentList"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentFileReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentTeacherReviewNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentDisplayNew"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AdminClassSections"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentProfileInDetail"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StaffAttendanceRegister"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AdminStaffTakeAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AdminMessages"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AdminStaffDayLeaveRequests"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" /> <!-- admin end -->
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ParentHome"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ReportTopicActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ReportSubChapterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherCalAndEvents"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.NewLeaveRequest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherLeaveRequest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherLivePreviousExams"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MessageChatActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.UserMessages"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AdminHome"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.EditImageActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherStudentHwFilesDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHWSubmissionDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherStudAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherStdnListAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AddCirculars"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherSectionAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHwStudentSubmission"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHwFileDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherStdntLRinDetail"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherAddHomeworkActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherLiveRecordedClasses"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" /> <!-- <activity tools:node="merge"  android:exported="true"   -->
+        <!-- android:name=".KhubFlipActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- tools:ignore="LockedOrientationActivity" /> -->
+        <!-- <activity tools:node="merge"  android:exported="true"   -->
+        <!-- android:name=".khub.KhubFlipActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- tools:ignore="LockedOrientationActivity" /> -->
+        <!-- <activity tools:node="merge"  android:exported="true"   -->
+        <!-- android:name=".KhubQuizActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- tools:ignore="LockedOrientationActivity" /> -->
+        <!-- <activity tools:node="merge"  android:exported="true"   -->
+        <!-- android:name=".khub.KhubQuizActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- tools:ignore="LockedOrientationActivity" /> -->
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherClassesViewAll"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherCourseChapTopicListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherCourseTopicView"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherCourseSubChapListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherClassStudents"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherCreateToDoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherToDoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherStdnTakeAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AllStudentsLeaveRequests"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherStudentsAttendanceRegister"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHwDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHwAssignments"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherCourseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherClassView"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherClassSections"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentLeaveRequest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHome"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TeacherHomeNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ScheduleAndCalendar"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockOptionTypeSelectionNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.OnlineTestReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentOnlineTestResult"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentOnlineTestReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.AddArenaAudioClips"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AnalyticsTopicPerformance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AnalyticsSubChapPerformance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AnalyticsClassSubPerformance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentAnalytics"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.RegAdmissionNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.UserSelection"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.JEETestMarksDivision"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentOnlineTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentTestOnlineCompleted"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TopicMockTestInfo"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CalendarEventDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CalendarAndEvents"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CircularDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockTestReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockTestResult"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockTestInfo"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Arena.ArenaDisplayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Circulars"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentExamsListingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QBox.AskADoubt"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TextBookActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockTestNew"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.TopicVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.PracticeTest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CoursePracticeTest"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.SessionRecordingListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.SessionRecordingSubjectWise"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.SummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentTeacherReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.PdfWebViewer"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.WebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.NewPdfViewer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.ImageDisp"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentFileDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.QAActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentUpload"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.AssignmentDisplay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.PlayerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.YoutubeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Util.VideoWebViewer"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.InstituteVideos"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.GalleryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.FeedbackFormActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.FeedbackListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MyAchievements"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.PersonalNotes"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ReportSubjectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ReportClassActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CreateToDoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ToDoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.EditProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentAttendance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.SearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockOptionTypeSelection"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.MockTestOptionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CourseTopicView"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CourseChapterTopicListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.CourseSubjectChapterListing"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ChatMessageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.ChatActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Notifications"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.LiveExamDetails"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.LiveDetails"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.Assignments"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.SchedulesCalendar"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.StudentHome"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.DescriptiveObjTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.DescriptiveFileOrder"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.DescriptiveTestReview"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.StudentDescriptiveTestResult"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.StudentDescExamsTabs"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.TeacherDesExams"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.TeacherDescriptiveQueSubmit"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.TeacherDescriptiveSectionDetail"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.DescriptiveStudentList"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.DescriptiveQueSubmit"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.descriptive.DescriptiveSectionDetails"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.activity.ResourcesListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+
+        <activity
+            android:name="myschoolapp.com.gsnedutech.activity.fee.FeeConfirmandPay"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.activity.fee.FeeDueDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+        <activity
+            android:name="myschoolapp.com.gsnedutech.activity.fee.FeeCategoriesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            tools:node="merge" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+        <receiver
+            android:name="myschoolapp.com.gsnedutech.Util.NetworkConnectivity"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

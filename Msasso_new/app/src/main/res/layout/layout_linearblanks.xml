@@ -1,0 +1,7 @@
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_blanks"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+</TableLayout>

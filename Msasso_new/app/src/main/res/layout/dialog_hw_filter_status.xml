@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:text="Select By Month or Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:text="All"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"/>
+
+        <CheckBox
+            android:id="@+id/cb_pending"
+            android:text="Pending"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"/>
+
+        <CheckBox
+            android:id="@+id/cb_missed"
+            android:text="Missed"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"/>
+        <CheckBox
+            android:id="@+id/cb_submitted"
+            android:text="Submitted"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

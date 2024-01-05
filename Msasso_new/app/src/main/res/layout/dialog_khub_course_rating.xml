@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/bg_grey_circle_border"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_grey_circle_border"
+            android:src="@drawable/ic_close_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Please give the Course Rating"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/black"/>
+
+        <RatingBar
+            android:id="@+id/rb_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:paddingTop="8dp"
+            android:layout_marginTop="10dp"
+            android:progressTint="#F0C230"
+            android:rating="0"
+            android:secondaryProgressTint="@android:color/transparent"
+            />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/lato"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Submit"/>
+
+    </LinearLayout>
+</ScrollView>

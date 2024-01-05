@@ -1,0 +1,81 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_live_classes"-->
+    <!--        android:icon="@drawable/ic_live_classes_menu"-->
+    <!--        android:iconTint="@null"-->
+    <!--        android:title="Mock Tests" />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_practice"-->
+    <!--        android:icon="@drawable/ic_live_classes_menu"-->
+    <!--        android:iconTint="@null"-->
+    <!--        android:title="Practice" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_attendance"-->
+    <!--        android:icon="@drawable/ic_live_classes_menu"-->
+    <!--        android:iconTint="@null"-->
+    <!--        android:title="Attendance" />-->
+    <item
+        android:id="@+id/navigation_circulars"
+        android:icon="@drawable/ic_circulars"
+        android:iconTint="@null"
+        android:title="Circulars" />
+    <item
+        android:id="@+id/navigation_wishlist"
+        android:icon="@drawable/ic_menu_wish_list"
+        android:visible="false"
+        android:iconTint="@null"
+        android:title="Wishlist" />
+    <item
+        android:id="@+id/navigation_my_achievements"
+        android:icon="@drawable/ic_menu_achievements"
+        android:visible="false"
+        android:iconTint="@null"
+        android:title="My Achievements" />
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_menu_report"
+        android:iconTint="@null"
+        android:title="Report" />
+    <item
+        android:id="@+id/navigation_personal_report"
+        android:icon="@drawable/ic_menu_personal_notes_icon"
+        android:iconTint="@null"
+        android:title="Personal Notes" />
+    <item
+        android:id="@+id/navigation_todo"
+        android:icon="@drawable/ic_menu_todo"
+        android:iconTint="@null"
+        android:title="ToDo" />
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_menu_gallery"
+        android:iconTint="@null"
+        android:title="Gallery" />
+    <item
+        android:id="@+id/navigation_feedback"
+        android:icon="@drawable/ic_menu_feedback"
+        android:visible="false"
+        android:iconTint="@null"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/ic_menu_contact_us"
+        android:visible="false"
+        android:iconTint="@null"
+        android:title="Contact Us" />
+    <item
+        android:id="@+id/navigation_terms_conditions"
+        android:icon="@drawable/ic_menu_flat"
+        android:iconTint="@null"
+        android:visible="false"
+        android:title="Terms &amp; Conditions" />
+    <item
+        android:id="@+id/navigation_log_out"
+        android:icon="@drawable/ic_menu_logut_icon"
+        android:iconTint="@null"
+        android:title="Logout" />
+
+</menu>

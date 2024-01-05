@@ -1,0 +1,92 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assignments"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_reassigned"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous files"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_previous"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_files"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_teacher_review"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_grad_tab_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_teacher_review_big"/>
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Teacher's Review"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"/>
+    </LinearLayout>
+
+
+</LinearLayout>

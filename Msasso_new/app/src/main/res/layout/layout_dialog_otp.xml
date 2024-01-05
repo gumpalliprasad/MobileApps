@@ -1,0 +1,113 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/close_btn"
+            android:fontFamily="@font/lato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textColor="#494949"
+            android:alpha="0.25"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/lato"
+            android:text="Enter OTP Sent To Your Registered"
+            android:textColor="#494949"
+            android:alpha="0.75"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/lato"
+                android:text="Mobile Number "
+                android:textColor="#494949"
+                android:alpha="0.75"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/lato"
+                android:text="XXXXXXX123"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_newPasscode"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingTop="30dp"
+            android:singleLine="true"
+            app:pinBackgroundIsSquare="true"
+            android:background="@drawable/bg_border_10"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:imeOptions="actionDone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:text="Next"
+            android:background="@drawable/bg_grad_tab_select"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/lato"
+            android:text="@string/resend_otp"
+            android:textColor="#1A609D"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

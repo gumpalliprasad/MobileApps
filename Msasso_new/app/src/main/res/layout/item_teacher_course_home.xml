@@ -1,0 +1,40 @@
+<FrameLayout android:layout_marginRight="16sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@drawable/bg_10_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="38dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_className"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="VI"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/bg_item_course_circle"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
+
+</FrameLayout>

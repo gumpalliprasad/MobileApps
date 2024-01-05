@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 14/8/19 12:35 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 14/8/19 12:35 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/rounded_corners_white14sh0pad"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:padding="15dp"
+        android:id="@+id/iv_sub"
+        android:layout_width="114dp"
+        android:layout_height="135dp"
+        android:src="@drawable/ic_maths_icon_black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Maths 6"
+            android:textColor="#222222"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Average Score (%)"
+                android:textColor="#8e8e93"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_score_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.04"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="66%"
+                android:textColor="#222222"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Time Spent"
+                android:textColor="#8e8e93"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_time_spent_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.04"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="1:06:22"
+                android:textColor="#222222"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Tests Taken"
+                android:textColor="#8e8e93"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_test_taken_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.04"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text="22"
+                android:textColor="#222222"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

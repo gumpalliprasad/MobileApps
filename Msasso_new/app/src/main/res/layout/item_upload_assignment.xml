@@ -1,0 +1,32 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_grad_tab_select">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_assign_upload_big"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato"
+            android:text="Tap to Select File"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

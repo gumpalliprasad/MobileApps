@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  /*
+   * Created by SriRam on 28/9/18 2:48 PM
+   * Copyright (c) @CloudEdz 2018 . All rights reserved.
+   * Last modified 27/9/18 7:13 PM
+   */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_relax" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="Out of the War Zone! Calm Down and Relax a Bit"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:textColor="#8a96a0"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        tools:text="Exam results are handed over to you" />
+
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_reviewicon"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="View Result"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

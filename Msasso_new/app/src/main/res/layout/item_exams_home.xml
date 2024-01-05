@@ -1,0 +1,108 @@
+<androidx.cardview.widget.CardView android:layout_width="200dp"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#2065FF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Mathematics"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_live_recording_schedule"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter 1: Numbers"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:alpha="0.5"
+                android:fontFamily="@font/lato"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="09:00 am"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="50 min"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:fontFamily="@font/lato"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

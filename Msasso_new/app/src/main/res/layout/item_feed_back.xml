@@ -1,0 +1,106 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_feedback_item"/>
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_feed_back_list_item"/>
+
+        <LinearLayout
+            android:padding="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_form_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Student Survey Form"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/lato"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_feed_back_item"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_form_desc"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a feedback survey you have to finish. Let us us know how the classes are!"
+                android:textSize="13sp"
+                android:textColor="#494949"
+                android:lineHeight="20dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:alpha="0.75"
+                android:fontFamily="@font/lato"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit By:  "
+                    android:textSize="13sp"
+                    android:textColor="#494949"
+                    android:lineHeight="20dp"
+                    android:alpha="0.75"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:id="@+id/tv_sub_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="12th September"
+                    android:textSize="13sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:lineHeight="20dp"
+                    android:fontFamily="@font/lato"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/bg_grad_tab_select"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

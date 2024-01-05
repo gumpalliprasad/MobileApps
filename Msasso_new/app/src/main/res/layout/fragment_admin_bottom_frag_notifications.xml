@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 9/9/19 3:06 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 9/9/19 2:38 PM
+  ~  */
+  -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.AdminBottomFragNotifications">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.06"
+            android:text="Notifications"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="16dp"
+                android:text="Today"
+                android:textColor="#8a96a0"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_home_cal"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/notifi1"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_home_cal"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="Hello Pioneer, Cricket match with Discoverers this Sunday."
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_home_attendance"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/notifi2"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_homework"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/notifi3"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Homework"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_homework"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="New Homework in Science is added to Diary"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Homework"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_homework"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="New Homework in Maths is added to Diary"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Homework"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_home_cal"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="Tomorrow is Holiday due to Gandhi Jayanthi. School reopens on 2nd October."
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Calendar"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="16dp"
+                android:text="Yesterday"
+                android:textColor="#8a96a0"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_homework"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="Today is due date for Science Homework. Make sure to submit."
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Homework"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_homework"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="New Homework in Science is added to Diary"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Homework"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_homework"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="New Homework in Mats is added to your Diary"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Homework"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_home_cal"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="20dp"
+                    android:text="Tomorrow is Holiday due to Gandhi Jayanthi. School reopens on 2nd October."
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/rounded_corners_068f4d"
+                    android:fontFamily="sans-serif"
+                    android:text="Open Calendar"
+                    android:textColor="#068f4d"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#cfcfcf" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

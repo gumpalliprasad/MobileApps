@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_terms"
+            android:theme="@style/WhiteCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_termname"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L1(2000)"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_payamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Payment Amount()"/>
+
+    <TextView
+        android:id="@+id/tv_duedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff7979"
+        android:fontFamily="@font/lato"
+        android:text="Due on 2021-12-23"/>
+
+    <TextView
+        android:id="@+id/tv_penamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3093fd"
+        android:fontFamily="@font/lato"
+        android:text="Pending Amount : 20000"/>
+
+</LinearLayout>

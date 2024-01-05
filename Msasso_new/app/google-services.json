@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "968579662318",
+    "project_id": "gsn-edutech",
+    "storage_bucket": "gsn-edutech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968579662318:android:0cbc40303ca73f8a0a0eff",
+        "android_client_info": {
+          "package_name": "myschoolapp.com.gsnedutech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968579662318-ksm7l0u7rm8nhqvn0qgeojq4ct6ju315.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIH9yh7B5FhwZWdDBfFRXShIYZEiup4A0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968579662318-ksm7l0u7rm8nhqvn0qgeojq4ct6ju315.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

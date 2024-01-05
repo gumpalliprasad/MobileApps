@@ -1,0 +1,54 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.cardview.widget.CardView android:layout_width="180dp"
+            android:layout_height="120dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/ll_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_session_recordings"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/tv_vid_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number System"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/lato"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_sub_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mathematics"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/lato"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+

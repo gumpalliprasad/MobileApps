@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:text="Jeff Dixon"
+            android:id="@+id/tv_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#80000000"
+            android:text="29-10-2019 to 31-10-2019"
+            android:id="@+id/tv_dates"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#80000000"
+            android:text="Fever"
+            android:maxLines="2"
+            android:id="@+id/tv_reason"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_accepted"
+            android:text="Accept"
+            android:drawableTop="@drawable/ic_tick_greenbg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_rejected"
+            android:text="Reject"
+            android:drawableTop="@drawable/ic_cross_redbg"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/ic_att_absentinfo"/>
+
+</LinearLayout>

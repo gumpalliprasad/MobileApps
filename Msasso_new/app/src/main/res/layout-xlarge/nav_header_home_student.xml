@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 25/5/19 3:50 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 25/5/19 3:50 PM
+  ~  */
+  -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_profile"
+    android:paddingTop="55dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:layout_marginBottom="40dp"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="4dp"
+        android:src="@drawable/user_default"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ashish Kumar"
+            android:textColor="#000000"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_name"
+            android:fontFamily="@font/gotham_medium"
+            android:textSize="22sp"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_marginTop="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_class"
+                  android:text="Class II"
+                  android:textColor="#64494949"
+                  android:fontFamily="@font/gotham_medium"
+                  android:textSize="18sp"/>
+              <TextView
+                  android:id="@+id/tv_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="5043856"
+                  android:textColor="#64494949"
+                  android:fontFamily="@font/gotham_medium"
+                  android:textSize="18sp"/>
+          </LinearLayout>
+          <ImageView
+              android:layout_gravity="center_vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_menu_arrow"/>
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

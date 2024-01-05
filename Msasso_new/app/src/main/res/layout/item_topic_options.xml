@@ -1,0 +1,122 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+    <FrameLayout
+        android:id="@+id/fl_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_topic_orange_card">
+
+        <ImageView
+            android:alpha=".15"
+            android:id="@+id/img_type"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center|end"
+            android:layout_margin="80dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_whiteol_sheets"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/lato"
+                        android:maxLines="2"
+                        android:text="Chapter 1"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/lato"
+                        android:maxLines="3"
+                        android:text="Do id veniam aliquip reprehenderit. Velicios capa na umbre sono  Nulla id sit esse officia."
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_published_by_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato"
+                        android:text="Published By"
+                        android:textColor="#9fffffff"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_published_by"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="Content Team"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_count_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:gravity="center"
+                        android:text="Sheets"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

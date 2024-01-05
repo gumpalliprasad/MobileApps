@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 11/7/19 12:50 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 11/7/19 12:50 PM
+  ~  */
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="-5dp"
+        android:top="-5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+
+            <stroke
+                android:width="0.5dp"
+                android:color="#b8b8b1" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 24/10/19 6:07 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 21/10/19 3:11 PM
+  ~  */
+  -->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_featured"
+        android:icon="@drawable/ic_featuredicon"
+        android:title="@string/title_featured" />
+
+    <item
+        android:id="@+id/navigation_course"
+        android:icon="@drawable/ic_course"
+        android:title="@string/title_course" />
+
+    <item
+        android:id="@+id/navigation_tests"
+        android:icon="@drawable/ic_testicon"
+        android:title="@string/title_tests" />
+    <item
+        android:id="@+id/navigation_rankrPlus"
+        android:icon="@drawable/ic_school_bottom"
+        android:title="@string/title_myschool" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/title_notifications" />
+
+
+</menu>

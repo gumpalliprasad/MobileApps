@@ -1,0 +1,448 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:text="Create Poll"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ll_question"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="Question"
+                    android:id="@+id/tv_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:paddingLeft="8dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:elevation="20dp"
+                    android:drawablePadding="8dp"
+                    android:textColorHint="#64000000"
+                    android:textFontWeight="700"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+               <RadioGroup
+                   android:orientation="vertical"
+                   android:id="@+id/rg_options"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+
+
+                   <LinearLayout
+                       android:gravity="center"
+                       android:id="@+id/ll_op1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <RadioButton
+                           android:id="@+id/rb_1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:id="@+id/tv_percent_op1"
+                           android:visibility="gone"
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:padding="5dp"
+                           android:fontFamily="@font/lato"
+                           android:textColor="@color/black"
+                           android:textFontWeight="700"
+                           android:text="30%"/>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="8dp"
+                           android:layout_margin="5dp">
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+
+                               <com.google.android.material.progressindicator.ProgressIndicator
+                                   android:visibility="gone"
+                                   android:id="@+id/progress_op1"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   app:circularRadius="8dp"
+                                   app:indicatorColor="@color/_003c82"
+                                   android:scaleY="200"
+                                   android:progress="60"/>
+
+
+                               <LinearLayout
+                                   android:gravity="center"
+                                   android:padding="8dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal">
+
+                                   <TextView
+                                       android:id="@+id/tv_op1"
+                                       android:layout_width="0dp"
+                                       android:textSize="16sp"
+                                       android:layout_weight="1"
+                                       android:layout_height="wrap_content"
+                                       android:padding="5dp"
+                                       android:fontFamily="@font/lato"
+                                       android:textColor="#96000000"
+                                       android:textFontWeight="700"
+                                       android:text="option1"/>
+
+                                   <ImageView
+                                       android:src="@mipmap/ic_launcher"
+                                       android:layout_marginLeft="10dp"
+                                       android:layout_width="60dp"
+                                       android:layout_height="60dp"
+                                       android:id="@+id/iv_op1"/>
+
+                               </LinearLayout>
+
+                           </FrameLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:gravity="center"
+                       android:id="@+id/ll_op2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <RadioButton
+                           android:id="@+id/rb_2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:id="@+id/tv_percent_op2"
+                           android:visibility="gone"
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:padding="5dp"
+                           android:fontFamily="@font/lato"
+                           android:textColor="@color/black"
+                           android:textFontWeight="700"
+                           android:text="30%"/>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="8dp"
+                           android:layout_margin="5dp">
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+
+                               <com.google.android.material.progressindicator.ProgressIndicator
+                                   android:visibility="gone"
+                                   android:id="@+id/progress_op2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   app:circularRadius="8dp"
+                                   app:indicatorColor="@color/_003c82"
+                                   android:scaleY="200"
+                                   android:progress="60"/>
+
+
+                               <LinearLayout
+                                   android:gravity="center"
+                                   android:padding="8dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal">
+
+                                   <TextView
+                                       android:id="@+id/tv_op2"
+                                       android:layout_width="0dp"
+                                       android:textSize="16sp"
+                                       android:layout_weight="1"
+                                       android:layout_height="wrap_content"
+                                       android:padding="5dp"
+                                       android:fontFamily="@font/lato"
+                                       android:textColor="#96000000"
+                                       android:textFontWeight="700"
+                                       android:text="option2"/>
+
+                                   <ImageView
+                                       android:src="@mipmap/ic_launcher"
+                                       android:layout_marginLeft="10dp"
+                                       android:layout_width="60dp"
+                                       android:layout_height="60dp"
+                                       android:id="@+id/iv_op2"/>
+
+                               </LinearLayout>
+
+                           </FrameLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:gravity="center"
+                       android:id="@+id/ll_op3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <RadioButton
+                           android:id="@+id/rb_3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:id="@+id/tv_percent_op3"
+                           android:visibility="gone"
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:padding="5dp"
+                           android:fontFamily="@font/lato"
+                           android:textColor="@color/black"
+                           android:textFontWeight="700"
+                           android:text="30%"/>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="8dp"
+                           android:layout_margin="5dp">
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+
+                               <com.google.android.material.progressindicator.ProgressIndicator
+                                   android:visibility="gone"
+                                   android:id="@+id/progress_op3"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   app:circularRadius="8dp"
+                                   app:indicatorColor="@color/_003c82"
+                                   android:scaleY="200"
+                                   android:progress="60"/>
+
+
+                               <LinearLayout
+                                   android:gravity="center"
+                                   android:padding="8dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal">
+
+                                   <TextView
+                                       android:id="@+id/tv_op3"
+                                       android:layout_width="0dp"
+                                       android:textSize="16sp"
+                                       android:layout_weight="1"
+                                       android:layout_height="wrap_content"
+                                       android:padding="5dp"
+                                       android:fontFamily="@font/lato"
+                                       android:textColor="#96000000"
+                                       android:textFontWeight="700"
+                                       android:text="option3"/>
+
+                                   <ImageView
+                                       android:src="@mipmap/ic_launcher"
+                                       android:layout_marginLeft="10dp"
+                                       android:layout_width="60dp"
+                                       android:layout_height="60dp"
+                                       android:id="@+id/iv_op3"/>
+
+                               </LinearLayout>
+
+                           </FrameLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:gravity="center"
+                       android:id="@+id/ll_op4"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <RadioButton
+                           android:id="@+id/rb_4"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:id="@+id/tv_percent_op4"
+                           android:visibility="gone"
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:padding="5dp"
+                           android:fontFamily="@font/lato"
+                           android:textColor="@color/black"
+                           android:textFontWeight="700"
+                           android:text="30%"/>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="8dp"
+                           android:layout_margin="5dp">
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+
+                               <com.google.android.material.progressindicator.ProgressIndicator
+                                   android:visibility="gone"
+                                   android:id="@+id/progress_op4"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   app:circularRadius="8dp"
+                                   app:indicatorColor="@color/_003c82"
+                                   android:scaleY="200"
+                                   android:progress="60"/>
+
+
+                               <LinearLayout
+                                   android:gravity="center"
+                                   android:padding="8dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal">
+
+                                   <TextView
+                                       android:id="@+id/tv_op4"
+                                       android:layout_width="0dp"
+                                       android:textSize="16sp"
+                                       android:layout_weight="1"
+                                       android:layout_height="wrap_content"
+                                       android:padding="5dp"
+                                       android:fontFamily="@font/lato"
+                                       android:textColor="#96000000"
+                                       android:textFontWeight="700"
+                                       android:text="option4"/>
+
+                                   <ImageView
+                                       android:src="@mipmap/ic_launcher"
+                                       android:layout_marginLeft="10dp"
+                                       android:layout_width="60dp"
+                                       android:layout_height="60dp"
+                                       android:id="@+id/iv_op4"/>
+
+                               </LinearLayout>
+
+                           </FrameLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+
+               </RadioGroup>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_2e2e8b"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Submit for Approval"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_reassign_students"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_2e2e8b"
+        android:paddingStart="40dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="16dp"
+        android:text="Reassign Students"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

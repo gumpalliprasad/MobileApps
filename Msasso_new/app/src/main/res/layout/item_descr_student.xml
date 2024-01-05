@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 3/10/19 7:01 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 3/10/19 7:01 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_color"
+            android:gravity="center"
+            android:text="A"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user_default"
+            android:visibility="gone"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_roll_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="112124"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Brian Carr"
+                android:textColor="#80000000"
+                android:textSize="12dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:background="@drawable/bg_online"
+            android:text="InProgress"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:layout_marginTop="8dp"
+        android:background="#8e8e93" />
+
+</LinearLayout>

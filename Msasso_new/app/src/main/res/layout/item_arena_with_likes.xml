@@ -1,0 +1,82 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/iv_display_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_arena_img"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="10 Ways to Learn Fast"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:fontFamily="@font/lato"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tv_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#494949"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textFontWeight="500"
+            android:text="12"
+            android:drawableLeft="@drawable/ic_heart_border"
+            android:fontFamily="@font/lato"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_posted_by"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="By Venu"
+            android:textColor="#494949"
+            android:alpha="0.75"
+            android:fontFamily="@font/lato"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 mins ago"
+            android:textColor="#494949"
+            android:alpha="0.75"
+            android:fontFamily="@font/lato"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

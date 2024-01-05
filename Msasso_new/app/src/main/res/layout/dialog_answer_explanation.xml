@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_main_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Time Taken"/>
+
+                <TextView
+                    android:id="@+id/tv_time_taken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="00:00"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corners_white"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+
+                    <myschoolapp.com.gsnedutech.Util.CustomWebview
+                        android:id="@+id/wv_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bordergreen"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="end"
+                        android:backgroundTint="@color/green"
+                        android:background="@drawable/bg_grey_circle_border"
+                        android:layout_height="20dp">
+
+
+                        <ImageView
+                            android:id="@+id/iv_que_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_right_white"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <myschoolapp.com.gsnedutech.Util.CustomWebview
+                        android:id="@+id/wv_correct"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_borderred"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="end"
+                        android:backgroundTint="@color/red"
+                        android:background="@drawable/bg_grey_circle_border"
+                        android:layout_height="20dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_cross_white"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <myschoolapp.com.gsnedutech.Util.CustomWebview
+                        android:id="@+id/wv_wrong"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rounded_corners_white"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="Explanation to the question"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_no_explanation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="No Explanation for this Question"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <myschoolapp.com.gsnedutech.Util.CustomWebview
+                        android:id="@+id/wv_explanation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_grad_next_button"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_next_arrow" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_last"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:text="Do you really want \nto quit this Practice?"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_grad_no_button"
+                android:gravity="center"
+                android:text="No"
+                android:textAllCaps="false"
+                android:layout_marginEnd="14dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/ic_cross_white" />
+            <TextView
+                android:id="@+id/tv_yes"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_grad_yes_button"
+                android:gravity="center"
+                android:text="Yes"
+                android:layout_marginStart="14dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/ic_right_white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

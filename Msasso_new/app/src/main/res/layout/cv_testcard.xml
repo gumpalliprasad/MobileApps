@@ -1,0 +1,153 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 9/9/19 2:23 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 7/9/19 12:52 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_corners_white7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_c97d00_5"
+        android:minWidth="260dp"
+        android:minHeight="116dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners_white7"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="LIVE"
+            android:textColor="#d0021b"
+            android:textSize="11dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+
+            android:text="JEE Week Test"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e6ef"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_schedule_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Schedule"
+            android:textColor="#4d000000"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_schedule_header"
+            android:fontFamily="sans-serif"
+            android:text="Today at 9:40 AM"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corners_068f4d4"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:paddingLeft="6dp"
+            android:paddingTop="4dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="4dp"
+            android:text="Published"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assigned to "
+            android:textColor="#66000000"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_assigned_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:orientation="horizontal"
+            android:text="LOY01"
+            android:textColor="#8e8e93"
+            android:textSize="12dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_test_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Test Category: EAMCET"
+            android:textColor="#7f000000"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_last_edited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Last Edit: 21 Dec at 12:20 PM"
+            android:textColor="#7f000000"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</LinearLayout>

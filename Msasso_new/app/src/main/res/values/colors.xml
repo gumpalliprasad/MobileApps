@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#BAEBF9</color>
+    <color name="_42CBA2">#42CBA2</color>
+    <color name="_007fbe">#007fbe</color>
+    <color name="_fd8902">#fd8902</color>
+    <color name="black">#000000</color>
+    <color name="_E5E5E5">#E5E5E5</color>
+    <color name="white">#ffffff</color>
+
+    <color name="_2d2d2d">#2D2D2D</color>
+
+    <color name="red">#F41818</color>
+    <color name="green">#17A81D</color>
+
+
+<!--    mock test colors-->
+    <color name="wrong_ans">#e74b3b</color>
+    <color name="correct_ans">#16a085</color>
+    <color name="skiped_ans">#f1c30f</color>
+
+    <color name="notvisited">#d3d3d3</color>
+    <color name="answered">#b0ff59</color>
+    <color name="ansmark">#f8e71c</color>
+    <color name="markreview">#d4a3ff</color>
+    <color name="unanswered">#ff6f6f</color>
+    <color name="_003c82">#003c82</color>
+
+    <color name="_F5831F">#F5831F</color>
+    <color name="_B7EAF8">#B7EAF8</color>
+    <color name="_626262">#626262</color>
+    <color name="_222222">#222222</color>
+    <color name="grace_ans">#8BC34A</color>
+
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+    <color name="tool_bg">#151414</color>
+    <color name="semi_black_transparent">#99000000</color>
+    <color name="_f3f2f8">#f3f2f8</color>
+    <color name="_6E9DD1">#6E9DD1</color>
+    <color name="_575757">#575757</color>
+
+    <color name="color_continue">#066e8f</color>
+    <color name="_f5f9ff">#f5f9ff</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="_434343">#434343</color>
+
+    //jee
+    <color name="jee_maths">#d0021b</color>
+    <color name="jee_chemistry">#417505</color>
+    <color name="jee_physics">#ff7058</color>
+    <color name="_9c222222">#9c222222</color>
+    <color name="_51c4d6">#51c4d6</color>
+    <color name="_787878">#787878</color>
+    <color name="_ffb100">#ffb100</color>
+    <color name="semi_transparent">#00000000</color>
+
+    <color name="_959ba0">#959ba0</color>
+    <color name="_6e6e6e">#6e6e6e</color>
+</resources>

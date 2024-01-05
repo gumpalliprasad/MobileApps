@@ -1,0 +1,73 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#EEF1A2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_test_type"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            android:padding="12dp"
+            android:background="@drawable/bg_live_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_test_name"
+                    android:fontFamily="@font/lato"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="0.7"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textFontWeight="500"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:textSize="12sp"
+                    android:layout_weight="0.3"
+                    android:textColor="@color/black"
+                    android:text="(2 hrs)"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

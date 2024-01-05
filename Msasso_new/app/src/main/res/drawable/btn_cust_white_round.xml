@@ -1,0 +1,29 @@
+<!--
+  /*
+   * Created by SriRam on 6/9/18 5:51 PM
+   * Copyright (c) @CloudEdz 2018 . All rights reserved.
+   * Last modified 6/9/18 5:49 PM
+   */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#d9ffffff" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#d9ffffff" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</selector>

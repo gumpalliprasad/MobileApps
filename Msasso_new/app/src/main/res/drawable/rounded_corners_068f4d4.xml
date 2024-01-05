@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 30/5/19 11:55 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 30/5/19 11:50 AM
+  ~  */
+  -->
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"   >
+
+    <solid
+        android:color="#068f4d" >
+    </solid>
+
+    <corners
+        android:radius="4dp"   >
+    </corners>
+
+</shape>

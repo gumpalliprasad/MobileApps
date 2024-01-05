@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 25/5/19 3:50 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 25/5/19 3:50 PM
+  ~  */
+  -->
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="#494949" />
+    <item android:color="#64494949" />
+</selector>

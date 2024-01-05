@@ -1,0 +1,14 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 17/8/19 4:52 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 17/8/19 4:48 PM
+  ~  */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="#EF5350" />
+
+</shape>

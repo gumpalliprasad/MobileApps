@@ -1,0 +1,7 @@
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rv_mock_op"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

@@ -1,0 +1,499 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Quiz"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.progressindicator.ProgressIndicator
+                android:id="@+id/progress_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progress="100"
+                app:indicatorColor="#2e2e8b"
+                style="@style/Widget.MaterialComponents.ProgressIndicator.Circular.Determinate"
+                app:circularRadius="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato"
+                android:textSize="14sp"
+                android:textColor="#2e2e8b"
+                android:textFontWeight="700"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_q_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="20"
+                tools:listitem="@layout/item_question_number" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_q_image"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/bg_border_6"
+                    android:id="@+id/iv_q_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_q"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Q1. This is the Question"
+                    android:fontFamily="@font/lato"
+                    android:textFontWeight="700"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:id="@+id/tv_q_no_image"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:textSize="18sp"
+                    android:text="Q1. This is the Question"
+                    android:fontFamily="@font/lato"
+                    android:textFontWeight="700"
+                    android:textColor="#000000"/>
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="1"/>-->
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/ll_mcq">
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_options">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:orientation="horizontal">
+                       <androidx.cardview.widget.CardView
+                           android:id="@+id/cv_op1"
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:layout_margin="5dp"
+                           app:cardCornerRadius="5dp">
+
+                           <FrameLayout
+                               android:background="#7A7A7A"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+
+                               <TextView
+                                   android:id="@+id/tv_op_1"
+                                   android:visibility="visible"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:text="Sachin Tendulkar"
+                                   android:textSize="16sp"
+                                   android:fontFamily="@font/lato"
+                                   android:textFontWeight="700"
+                                   android:textColor="#ffffff"
+                                   android:gravity="center"/>
+
+                               <ImageView
+                                   android:id="@+id/iv_op_1"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:visibility="gone"
+                                   android:scaleType="fitXY"/>
+
+
+                               <View
+                                   android:id="@+id/view_op1_overlay"
+                                   android:visibility="gone"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="#1FA655"
+                                   android:alpha="0.8"/>
+
+
+                               <ImageView
+                                   android:id="@+id/iv_tick_op1"
+                                   android:visibility="gone"
+                                   android:layout_gravity="end"
+                                   android:layout_margin="10dp"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/ic_correct_arena_quiz"/>
+
+                           </FrameLayout>
+
+                       </androidx.cardview.widget.CardView>
+                       <androidx.cardview.widget.CardView
+                           android:id="@+id/cv_op2"
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:layout_margin="5dp"
+                           app:cardCornerRadius="5dp">
+                           <FrameLayout
+                               android:background="#7A7A7A"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:id="@+id/tv_op_2"
+                                   android:visibility="visible"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:text="Sachin Tendulkar"
+                                   android:textSize="16sp"
+                                   android:fontFamily="@font/lato"
+                                   android:textFontWeight="700"
+                                   android:textColor="#ffffff"
+                                   android:gravity="center"/>
+
+                               <ImageView
+                                   android:id="@+id/iv_op_2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:visibility="gone"
+                                   android:scaleType="fitXY"/>
+
+                               <View
+                                   android:id="@+id/view_op2_overlay"
+                                   android:visibility="gone"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="#1FA655"
+                                   android:alpha="0.8"/>
+                               <ImageView
+                                   android:id="@+id/iv_tick_op2"
+                                   android:visibility="gone"
+                                   android:layout_gravity="end"
+                                   android:layout_margin="10dp"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/ic_correct_arena_quiz"/>
+
+                           </FrameLayout>
+
+                       </androidx.cardview.widget.CardView>
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_op3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp">
+
+                            <FrameLayout
+                                android:background="#7A7A7A"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+
+                                <TextView
+                                    android:id="@+id/tv_op_3"
+                                    android:visibility="visible"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Sachin Tendulkar"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/lato"
+                                    android:textFontWeight="700"
+                                    android:textColor="#ffffff"
+                                    android:gravity="center"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_op_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    android:scaleType="fitXY"/>
+
+
+                                <View
+                                    android:id="@+id/view_op3_overlay"
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#1FA655"
+                                    android:alpha="0.8"/>
+                                <ImageView
+                                    android:id="@+id/iv_tick_op3"
+                                    android:visibility="gone"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_correct_arena_quiz"/>
+
+                            </FrameLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_op4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp">
+                            <FrameLayout
+                                android:background="#7A7A7A"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+
+                                <TextView
+                                    android:id="@+id/tv_op_4"
+                                    android:visibility="visible"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Sachin Tendulkar"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/lato"
+                                    android:textFontWeight="700"
+                                    android:textColor="#ffffff"
+                                    android:gravity="center"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_op_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    android:scaleType="fitXY"/>
+
+                                <View
+                                    android:id="@+id/view_op4_overlay"
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#1FA655"
+                                    android:alpha="0.8"/>
+                                <ImageView
+                                    android:id="@+id/iv_tick_op4"
+                                    android:visibility="gone"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_correct_arena_quiz"/>
+
+                            </FrameLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="0dp"
+                android:id="@+id/ll_tof">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_true"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center"
+                                android:text="True"
+                                android:textColor="#000000"
+                                android:textFontWeight="700"
+                                android:textSize="18sp" />
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_false"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center"
+                                android:text="False"
+                                android:textColor="#000000"
+                                android:textFontWeight="700"
+                                android:textSize="18sp" />
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_marginRight="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_2e2e8b"
+            android:text="Quit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:textAllCaps="false"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_2e2e8b"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_reassign_students"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_2e2e8b"
+        android:paddingStart="40dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="16dp"
+        android:text="Reassign Students"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

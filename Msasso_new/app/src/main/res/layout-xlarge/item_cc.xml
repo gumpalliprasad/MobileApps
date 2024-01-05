@@ -1,0 +1,93 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+           <TextView
+                android:fontFamily="@font/lato"
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport Related Circular"
+                android:textColor="#000000"
+                android:id="@+id/tv_name_cc"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+               <TextView
+                android:fontFamily="@font/lato"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="STD-STF-P"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#979797" />
+
+               <TextView
+                android:fontFamily="@font/lato"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="01-11-2019"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_date_cc"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#979797" />
+
+               <TextView
+                android:fontFamily="@font/lato"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Transport "
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_type_cc"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_paperclip"
+            android:id="@+id/iv_attach"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

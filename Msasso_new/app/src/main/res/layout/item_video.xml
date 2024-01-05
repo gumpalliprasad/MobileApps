@@ -1,0 +1,54 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@drawable/bg_palet_d1"
+                android:padding="15dp"
+                android:id="@+id/ll_bg"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_vid_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Video"
+                    android:textSize="18sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    android:visibility="gone"
+                    style="@style/Widget.MaterialComponents.ProgressIndicator.Linear.Determinate"
+                    app:indicatorSize="8dp"
+                    android:id="@+id/prog"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="60dp"
+                    android:layout_height="wrap_content"
+                    app:indicatorColor="#AA501E"
+                    android:progress="60"
+                    app:indicatorCornerRadius="5dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="end|center"
+                android:layout_margin="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_whiteol_camera"/>
+
+        </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<RadioButton android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:drawableTint="#ffffff"
+    android:buttonTint="#ffffff"
+    android:id="@+id/rb_option"
+    android:text="Yes"
+    android:textColor="#ffffff"
+    android:fontFamily="@font/lato"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

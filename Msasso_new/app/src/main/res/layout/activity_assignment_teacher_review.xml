@@ -1,0 +1,189 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher Review"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_submission_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teacher Review"
+                android:textColor="#000000"
+                android:fontFamily="@font/lato"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:textSize="18sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grad_tab_select"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Remark"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/lato"/>
+                        <TextView
+                            android:gravity="right"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Performance"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/lato"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_remark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Excellent"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/montserrat_semibold"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:id="@+id/view_percent_one"
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_progress_pointer"/>
+                                <View
+                                    android:id="@+id/view_percent_two"
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <View
+                                    android:background="#F74F38"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="6dp"/>
+                                <View
+                                    android:background="#F7CD38"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="6dp"/>
+                                <View
+                                    android:background="#5BC4FF"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="6dp"/>
+                                <View
+                                    android:background="#00CA45"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="6dp"/>
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_feed_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

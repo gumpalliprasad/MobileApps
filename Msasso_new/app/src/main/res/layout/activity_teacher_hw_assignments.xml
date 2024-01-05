@@ -1,0 +1,276 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:id="@+id/ll_toolbar"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assignments"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/ll_date_time"
+       android:layout_below="@+id/ll_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center">
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cv_date_time"
+           app:cardCornerRadius="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="45dp"
+           android:layout_marginRight="45dp"
+           android:layout_marginBottom="2dp">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_marginTop="5dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_calendar_month_year"/>
+
+               <TextView
+                   android:id="@+id/tv_month_year"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:fontFamily="@font/lato"
+                   android:text="Sep 2020"
+                   android:textColor="#000000"
+                   android:textFontWeight="700"
+                   android:textSize="18sp" />
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+   </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="15dp"
+        android:id="@+id/ll_tab"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/ll_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pending"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="700"
+            android:textColor="#000000"
+            android:background="@drawable/underline_colored"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/tv_reviewed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Completed"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="700"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/rv_assignments"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_backdrop"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0000000"
+        android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_assignment"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="top"
+            android:text="Projects"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/fb_proj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_fab_background" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_article_arena" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_assignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_hw"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/assignments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="top"
+            android:text="AssignMents"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/fb_assign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_fab_background" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_article_arena" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_hw"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="top"
+            android:text="HomeWork"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/fb_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_fab_background" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_article_arena" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fab_hw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_fab_arena" />
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 14/8/19 12:35 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 14/8/19 12:35 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Analytics"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:minHeight="?attr/actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/black"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@android:color/black" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

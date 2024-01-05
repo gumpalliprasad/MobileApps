@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="Finish Quiz ?"
+        android:textColor="#222222"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="These Results will be submitted for evaluation,\nPlease ensure before submitting"
+        android:textColor="#222222"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:text="Correct Answers"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_corrct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="10"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:text="Wrong Answers"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_wrong_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="10"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:text="UnAnswered"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_unanswered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="10"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/lato"
+            android:text="Pause"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/wrong_ans" />
+
+        <Button
+            android:id="@+id/btn_retake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_16a085"
+            android:padding="10dp"
+            android:fontFamily="@font/lato"
+            android:text="Retake"
+            android:textAllCaps="true"
+            android:textColor="@color/correct_ans" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

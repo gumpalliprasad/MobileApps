@@ -1,0 +1,65 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@drawable/bg_orange_grad_cal"
+        android:id="@+id/ll_main"
+        android:gravity="center_vertical"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Venugopal’s Birthday"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/lato"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10:00-11:30 AM"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/lato"/>
+            <TextView
+                android:id="@+id/tv_desc"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School grounds Hyderabad"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/lato"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_options"
+            android:padding="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_cal"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

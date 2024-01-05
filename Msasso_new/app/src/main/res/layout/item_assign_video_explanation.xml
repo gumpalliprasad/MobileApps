@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView android:layout_width="300dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_topic">
+
+        <TextView
+            android:id="@+id/tv_vid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View video Explanation 1"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_gg_play_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/play_icon"
+            android:text="Play Video"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

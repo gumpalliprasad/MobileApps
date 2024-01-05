@@ -1,0 +1,91 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:id="@+id/fl_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:layout_marginLeft="5dp"
+            android:text="09:00\nam"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="5dp"
+                android:text="Mathematics Live Class"/>
+            <TextView
+                android:id="@+id/tv_desc"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="5dp"
+                android:text="Complete chapter 4"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:alpha="0.1"
+
+                android:layout_gravity="bottom"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_k_hub"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_duration"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="5dp"
+                android:text="60 min"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+</androidx.cardview.widget.CardView>

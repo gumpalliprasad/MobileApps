@@ -1,0 +1,61 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 26/9/19 1:27 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 26/9/19 1:23 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"/>
+    <Spinner
+        android:id="@+id/sp_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/et_name_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_search"
+        android:hint="Enter Name"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:text="Search"
+            android:textColor="@color/color_continue"
+            />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:text="Cancel"
+            android:textColor="@color/color_continue"
+            />
+    </LinearLayout>
+</LinearLayout>

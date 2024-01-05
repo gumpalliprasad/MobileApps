@@ -1,0 +1,15 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 3/9/19 5:44 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 3/9/19 5:42 PM
+  ~  */
+  -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif"
+    android:textColor="#000000"
+    android:textSize="14dp"
+    android:textStyle="bold" />

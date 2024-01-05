@@ -1,0 +1,96 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 26/9/19 12:13 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 26/9/19 12:13 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_gravity="end"
+        android:gravity="end|center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <TextView
+            android:id="@+id/tv_user_message"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:maxWidth="200dp"
+            android:textColor="#ffffff"
+            android:text="Good Morning ma’am, I have a doubt in Chapter. Who hound of baskerville"
+            android:fontFamily="@font/lato"/>
+
+        <TextView
+            android:id="@+id/tv_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:alpha="0.25"
+            android:layout_marginTop="4dp"
+            android:text="09:00 am"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_gravity="start"
+        android:gravity="start|center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:background="@drawable/bg_chat_recieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:maxWidth="200dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#000000"
+            android:text="Good Morning ma’am, I have a doubt in Chapter. Who hound of baskerville"
+            android:fontFamily="@font/lato"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:gravity="right"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:alpha="0.25"
+            android:text="09:00 am"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

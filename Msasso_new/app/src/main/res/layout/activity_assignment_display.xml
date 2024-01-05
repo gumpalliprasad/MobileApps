@@ -1,0 +1,255 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assignments"
+            android:textColor="#000000"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+   <ScrollView
+       android:fillViewport="true"
+       android:scrollbars="none"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <androidx.cardview.widget.CardView
+               app:cardCornerRadius="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_marginTop="2dp"
+               android:layout_marginBottom="2dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="15dp">
+                   <TextView
+                       android:id="@+id/tv_sub"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Mathematics"
+                       android:textStyle="bold"
+                       android:textSize="18sp"
+                       android:textColor="#494949"
+                       android:fontFamily="@font/lato"/>
+
+                   <TextView
+                       android:id="@+id/tv_desc"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Incididunt excepteur adipisicing minim id cillum Incididunt excepteur adipisicing minim id cillum Incididunt."
+                       android:textSize="15sp"
+                       android:textColor="#232323"
+                       android:fontFamily="@font/lato"/>
+
+                   <TextView
+                       android:layout_marginTop="5dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Created on 22 Jul 2020 by Lalith Sir"
+                       android:textSize="12sp"
+                       android:textColor="#64494949"
+                       android:fontFamily="@font/lato"/>
+
+                   <LinearLayout
+                       android:id="@+id/ll_open_attachments"
+                       android:layout_marginTop="15dp"
+                       android:background="@drawable/bg_333444_5dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="4dp"
+                       android:gravity="center"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp">
+
+                       <ImageView
+                           android:layout_marginTop="5dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_open_assignments"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Open Attachments"
+                           android:textSize="18sp"
+                           android:textStyle="bold"
+                           android:textColor="#ffffff"
+                           android:fontFamily="@font/lato"/>
+                   </LinearLayout>
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+
+           <LinearLayout
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_marginTop="25dp"
+                   android:layout_marginLeft="16dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Assignment Keys"
+                       android:textSize="18sp"
+                       android:textColor="#000000"
+                       android:fontFamily="@font/lato"/>
+
+                   <TextView
+                       android:background="@drawable/bg_red_circle_border"
+                       android:layout_marginLeft="30dp"
+                       android:gravity="center"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:text="5"
+                       android:textSize="18sp"
+                       android:textColor="#FB5353"
+                       android:fontFamily="@font/lato"/>
+
+               </LinearLayout>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_marginTop="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="16dp"
+                   android:id="@+id/rv_assignment_keys"/>
+
+               <LinearLayout
+                   android:layout_marginTop="25dp"
+                   android:layout_marginLeft="16dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Video Explanation"
+                       android:textSize="18sp"
+                       android:textColor="#000000"
+                       android:fontFamily="@font/lato"/>
+
+                   <TextView
+                       android:background="@drawable/bg_red_circle_border"
+                       android:layout_marginLeft="30dp"
+                       android:gravity="center"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:text="3"
+                       android:textSize="18sp"
+                       android:textColor="#FB5353"
+                       android:fontFamily="@font/lato"/>
+
+               </LinearLayout>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="16dp"
+                   android:id="@+id/rv_vid_explain"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"/>
+
+           <LinearLayout
+               android:visibility="gone"
+               android:id="@+id/ll_reassign_upload"
+               android:layout_margin="16dp"
+               android:background="@drawable/bg_grad_tab_select"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:orientation="horizontal"
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_upload_assign"/>
+               <TextView
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Upload Your Work"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:textColor="#ffffff"
+                   android:fontFamily="@font/lato"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/ll_upload"
+               android:layout_margin="16dp"
+               android:background="@drawable/bg_grad_tab_select"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:orientation="horizontal"
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp">
+
+               <ImageView
+                   android:id="@+id/iv_upload"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_upload_assign"/>
+               <TextView
+                   android:id="@+id/tv_upload"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Upload Your Work"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:textColor="#ffffff"
+                   android:fontFamily="@font/lato"/>
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

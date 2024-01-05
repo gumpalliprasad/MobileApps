@@ -1,0 +1,557 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:text="Welcome To My School App"
+            android:textColor="#000000"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_10_dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="right"
+                    android:text="Thought of the day"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lato"
+                    android:padding="10dp"
+                    android:text="Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.       -- Thomas A. Edison"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_double_quotes" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lato"
+            android:text="Your Pending Works"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_no_hw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_no_home_work_available"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_sad_emoji"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Hey you have no pending work..."
+                android:textColor="#64494949"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pending_works"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="16sp"
+                android:fontFamily="@font/lato"
+                android:text="9:45 AM"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="16sp"
+                android:fontFamily="@font/lato"
+                android:text="12th January 2021"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bg_10_dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Good Morning!"
+                            android:textColor="#222222"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lato"
+                            android:text="Teja Kumar"
+                            android:textColor="#222222"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lato"
+                            android:text="12 | Grade 5 Sec A"
+                            android:textColor="#222222"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/welcome_logo"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="center" />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/nav_img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/user_default"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="1dp" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16sp"
+                android:background="@drawable/bg_10_dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/ic_dq_no_fill"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text="Thought of the day"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato"
+                        android:padding="10dp"
+                        android:text="Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.  -- Thomas A. Edison"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/edison" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16sp"
+                android:background="@drawable/bg_10_dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="left|center"
+                    android:text="Fun Fact"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato"
+                        android:padding="10dp"
+                        android:text="Bananas are curved because they grow towards the sun"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_haha_fun_fact"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="16sp"
+                android:layout_marginBottom="200dp"
+                android:background="@drawable/bg_10_dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/ic_aa_word_of_day"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text="Word of the Day"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Laugh"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="(Noun)"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Meaning"
+                    android:textColor="#494949"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="make the spontaneous sounds and movements of the face and body that are the instinctive expressions."
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Sentence"
+                    android:textColor="#494949"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="He is laughing loudly."
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/lato"
+                android:text="Resume From Where You Left"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/bg_resume_new"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_number_system"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:text="Number System"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lato"
+                            android:text="Profit &amp; Loss"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato"
+                            android:gravity="center"
+                            android:text="Mathematics"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/ic_play_button" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lato"
+                android:text="Recall Synopsis"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_synopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/gradient_theme"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:padding="20dp"
+            android:text="Continue To Main Page"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_double_next_arrow" />
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+
+

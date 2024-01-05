@@ -1,0 +1,45 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_khub_notification"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#494949"
+            android:alpha="0.75"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:text="4 mins ago"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#494949"
+            android:alpha="0.75"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

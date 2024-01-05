@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                android:textColor="#494949"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Class 1"
+                android:textSize="14sp"/>
+            <RatingBar
+                android:secondaryProgressTint="@android:color/transparent"
+                android:progressTint="#F0C230"
+                android:numStars="5"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginLeft="15dp"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sub_repo"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

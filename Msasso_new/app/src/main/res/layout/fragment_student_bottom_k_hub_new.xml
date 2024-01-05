@@ -1,0 +1,321 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:layout_marginBottom="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:alpha="0.4"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:padding="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/ic_search"/>
+
+                <EditText
+                    android:hint="Search"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/SliderDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_weight="1"
+                android:text="Categories"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_cat_showAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Show All"
+                android:padding="6dp"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/testing_img"/>
+
+        <SearchView
+            android:id="@+id/sv_qbox_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_6"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search Categories"
+            android:searchIcon="@null"
+            app:queryBackground="@android:color/transparent" />
+
+        <ProgressBar
+            android:id="@+id/pb_cat"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/black"
+            android:padding="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_khub_cat"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_trending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_weight="1"
+                android:text="Trending Courses"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="ShowAll"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_trending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_weight="1"
+                android:text="Most Popular"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="ShowAll"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_popular_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_khub_mycourse"
+            android:layout_marginTop="8dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_mycourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_weight="1"
+                android:text="My Courses"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_mycos_showAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Show All"
+                android:padding="6dp"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_myCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_khub_mycourse"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_weight="1"
+                android:text="Free Courses"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="ShowAll"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/item_khub_cat_courses"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="60dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

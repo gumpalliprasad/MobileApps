@@ -1,0 +1,83 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/tv_option_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A"
+                android:textSize="13sp"
+                android:textFontWeight="600"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:textColor="#000000"/>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_selected_image"
+            android:layout_gravity="start"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_gallery_dummy"/>
+
+        <TextView
+            android:id="@+id/tv_select_image"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_gallery"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_arena_add_image"
+            android:text="Tap To Add Image"
+            android:textSize="12sp"
+            android:fontFamily="@font/lato"/>
+
+        <EditText
+            android:id="@+id/et_option_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:hint="Add Text Here"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato"
+            android:layout_margin="16dp"/>
+
+
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_correct"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#641FA655"/>
+</FrameLayout>
+
+
+
+</androidx.cardview.widget.CardView>

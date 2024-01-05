@@ -1,0 +1,143 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_course_name"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"
+                    android:textColor="#494949"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Overall Performance"
+                    android:textFontWeight="700"
+                    android:textSize="14sp"/>
+                <RatingBar
+                    android:id="@+id/rb"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    android:progressTint="#F0C230"
+                    android:numStars="5"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_marginLeft="15dp"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="0"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textSize="14sp"
+                    android:textColor="#494949"
+                    android:alpha="0.5"
+                    android:text="Average Score"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:id="@+id/tv_avg_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textSize="14sp"
+                    android:textColor="#494949"
+                    android:textStyle="bold"
+                    android:text="0.0%"
+                    android:fontFamily="@font/lato"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textSize="14sp"
+                    android:textColor="#494949"
+                    android:alpha="0.5"
+                    android:text="Time Spent"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:id="@+id/tv_avg_time_spent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textSize="14sp"
+                    android:textColor="#494949"
+                    android:textStyle="bold"
+                    android:text="00:00:11"
+                    android:fontFamily="@font/lato"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:textSize="14sp"
+                    android:textColor="#494949"
+                    android:alpha="0.5"
+                    android:text="Tests Taken"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:id="@+id/tv_test_taken"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textSize="14sp"
+                    android:textColor="#494949"
+                    android:textStyle="bold"
+                    android:text="02"
+                    android:fontFamily="@font/lato"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/bg_upcoming_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="right"
+            android:fontFamily="@font/lato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:alpha="0.25"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:gravity="right"
+            android:fontFamily="@font/lato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05 Aug, 2020"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_sub"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_test_name"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description of the test goes here... (one liner)"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:alpha="0.25"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.25"
+                    android:fontFamily="@font/lato"
+                    android:text="Start Time"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:fontFamily="@font/lato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09:30 am"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_status"
+                android:fontFamily="@font/lato"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Scheduled"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

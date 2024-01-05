@@ -1,0 +1,63 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_default"
+        android:visibility="visible"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="112124"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_rollnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Brian Carr"
+            android:textColor="#80000000"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grad_tab_select"
+        android:text="80%"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textFontWeight="700"
+        android:fontFamily="@font/lato"/>
+
+
+</LinearLayout>

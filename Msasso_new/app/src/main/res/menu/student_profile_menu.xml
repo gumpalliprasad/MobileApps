@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 25/9/19 12:44 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 25/9/19 12:43 PM
+  ~  */
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_featuredicon"
+        android:title="@string/title_editimg" />
+
+    <item
+        android:id="@+id/changePassword"
+        android:icon="@drawable/ic_course"
+        android:title="@string/title_changePassword" />
+
+</menu>

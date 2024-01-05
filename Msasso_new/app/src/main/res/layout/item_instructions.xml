@@ -1,0 +1,29 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_sub_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="Instructions"
+        android:textSize="14sp" />
+    <TextView
+        android:lineHeight="18sp"
+        android:id="@+id/tv_instructions"
+        android:textFontWeight="700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000000"
+        android:text="Instructions"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 26/9/19 12:13 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 26/9/19 11:59 AM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@drawable/red_dot"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Prakash Pandey"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="I’m concerned by Child’s Attendance percentage…"
+            android:textColor="#222222"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:text="5:30 PM"
+        android:textColor="#80000000"
+        android:textSize="12dp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

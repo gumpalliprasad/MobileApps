@@ -1,0 +1,12 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 4/9/19 1:34 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 4/9/19 1:34 PM
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_done_black" android:state_checked="true" />
+    <item android:drawable="@drawable/unchecked" android:state_checked="false" />
+</selector>

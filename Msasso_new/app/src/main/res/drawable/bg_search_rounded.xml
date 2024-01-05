@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 25/5/19 3:50 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 25/5/19 3:50 PM
+  ~  */
+  -->
+
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#170f0f0f" />
+    <corners android:radius="100dp" />
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp" />
+</shape>

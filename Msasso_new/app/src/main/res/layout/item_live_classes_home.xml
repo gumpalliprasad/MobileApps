@@ -1,0 +1,118 @@
+<androidx.cardview.widget.CardView android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="180dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_live_classes"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Number System"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_live_recording_schedule"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:fontFamily="@font/lato"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start time"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9:30 am"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duration"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50 min"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Join"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:background="@drawable/bg_join_button"
+                    android:fontFamily="@font/lato"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

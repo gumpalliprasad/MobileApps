@@ -1,0 +1,17 @@
+<!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 7/8/19 12:02 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 7/8/19 12:02 PM
+  ~  */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="oval">
+
+    <solid android:color="#e76959" />
+    <size
+        android:width="12dp"
+        android:height="12dp" />
+</shape>

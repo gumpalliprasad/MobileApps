@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by SriRamaMurthy A on 3/10/19 7:01 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 3/10/19 2:51 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rounded_corners_white14sh"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_live"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:text="\u2022 LIVE"
+            android:textColor="#ffffff"
+            android:textSize="8dp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_test_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="15dp"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            tools:text="Test Category"
+            android:textColor="#8e8e93"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_test_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#4a4a4a"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Start Date &amp; Time"
+            android:textColor="#8e8e93"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_start_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#4a4a4a"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="End Date &amp; Time"
+            android:textColor="#8e8e93"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_end_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#4a4a4a"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_startTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_grad_tab_select"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

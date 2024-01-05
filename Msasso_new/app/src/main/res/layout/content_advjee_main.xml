@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@drawable/bg_doodle_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AdvJeeMainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:fontFamily="@font/lato"
+                android:textColor="#000000"
+                android:layout_marginEnd="40dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="0sp"
+                android:gravity="center"
+                android:text="JEE Advanced" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_noavailable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="Something wrong with Network Connection.  Please Retry again!"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_year_wise_advjee"
+                tools:itemCount="4"
+                android:visibility="visible"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

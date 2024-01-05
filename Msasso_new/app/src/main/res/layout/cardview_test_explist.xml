@@ -1,0 +1,44 @@
+<!--
+  /*
+   * Created by SriRam on 28/9/18 2:48 PM
+   * Copyright (c) @CloudEdz 2018 . All rights reserved.
+   * Last modified 27/9/18 7:13 PM
+   */
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customeboader_noradius"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/sno_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/gans_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

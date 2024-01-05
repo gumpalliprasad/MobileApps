@@ -1,0 +1,23 @@
+<LinearLayout android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Header"
+        android:fontFamily="@font/lato"
+        android:textFontWeight="700"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_selection"/>
+
+</LinearLayout>

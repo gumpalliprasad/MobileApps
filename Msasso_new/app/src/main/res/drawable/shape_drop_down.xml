@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  /*
+   * Created by SriRam on 6/9/18 5:51 PM
+   * Copyright (c) @CloudEdz 2018 . All rights reserved.
+   * Last modified 6/9/18 5:49 PM
+   */
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+
+            <stroke
+                android:width="1dp"
+                android:color="#cfcfcf" />
+
+            <padding
+                android:bottom="1dp"
+                android:left="5dp"
+                android:right="10dp"
+                android:top="1dp" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="right"
+            android:src="@drawable/form_drop_down" />
+    </item>
+</layer-list>

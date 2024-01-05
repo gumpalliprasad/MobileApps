@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="Evaluation"
+        android:textColor="#222222"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="These Results will be submitted for evaluation,\nPlease ensure before submitting"
+        android:textColor="#222222"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_subs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/lato"
+            android:text="Cancel"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/wrong_ans" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_16a085"
+            android:padding="10dp"
+            android:fontFamily="@font/lato"
+            android:text="Proceed to Submit"
+            android:textAllCaps="true"
+            android:textColor="@color/correct_ans" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="Once you submit,it cannot be Undone"
+        android:textColor="@color/wrong_ans"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

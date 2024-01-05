@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_physics"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/neet_item_sub"
+    android:padding="15dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/lato"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="-2sp"
+                android:text="Physics"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/img_sub"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/neet_bg_sub_icon"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/neet_magnet" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_classXI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sub_class_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Physics-11"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <ProgressBar
+                        android:id="@+id/pb_first_year"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:progress="80"
+                        android:progressDrawable="@drawable/neet_physics_gradient" />
+
+                    <TextView
+                        android:id="@+id/prog1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/lato"
+                        android:gravity="center"
+                        android:text="40%"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_classXII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sub_class_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Physics-12"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <ProgressBar
+                        android:id="@+id/pb_second_year"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:progress="40"
+                        android:progressDrawable="@drawable/neet_physics_gradient" />
+
+
+                    <TextView
+                        android:id="@+id/prog2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/lato"
+                        android:gravity="center"
+                        android:text="40%"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

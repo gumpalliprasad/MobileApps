@@ -1,0 +1,126 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">GSN EDUTECH</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_course">Courses</string>
+    <string name="title_live">Live</string>
+    <string name="title_q_box">Q-Box</string>
+    <string name="title_k_hub">K-Hub</string>
+    <string name="proceed">Proceed</string>
+    <string name="resend_otp"><u>Resend Otp</u>.</string>
+
+    <string name="action_close">Close</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_submit">Submit</string>
+
+    <string name="error_connect">Unable to connect to Internet</string>
+    <string name="error_internet">Please check your internet Connection.
+        Do you want to turn on mobile data or Wi-Fi in Settings?</string>
+
+    <string name="student">Student</string>
+    <string name="parent">Parent</string>
+    <string name="staff">Staff</string>
+
+    <string name="prompt_password">PASSWORD</string>
+    <string name="action_login">LOGIN</string>
+    <string name="action_forgot">Forgot Password?</string>
+
+
+    !-- Exoplayer error strings-->
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+    <string name="error_unrecognized_stereo_mode">Unrecognized stereo mode</string>
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+
+    <string name="error_cleartext_not_permitted">Cleartext traffic not permitted</string>
+    <string name="error_drm_unsupported_before_api_18">Protected content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="unsupported_ads_in_concatenation">Playing sample without ads, as ads are not supported in concatenations</string>
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="error_generic">Playback failed</string>
+    <string name="screen">Normal</string>
+
+    <string name="path_base">/.rankrPlus</string>
+    <string name="path_testjson">/.rankrPlus/test.json</string>
+    <string name="path_online_testjson">/.rankrPlus/online_test.json</string>
+
+    <!-- Test Info Strings-->
+    <string name="total_questions">Total Questions:</string>
+    <string name="total_time">Total Time:</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="wrong_answer">Wrong Answer</string>
+    <string name="unanswered">UnAnswered</string>
+
+    <string name="_1_mmark">-1 Mark</string>
+    <string name="_4_marks">+4 Marks</string>
+
+    <string name="_15_mins">15 Mins</string>
+
+    <string name="action_start">Start</string>
+    <string name="alert_finreview">Do You want to finish the Review</string>
+
+    <string name="text_count">2000</string>
+
+    <string name="prompt_comment">Comment(Optional)</string>
+    <string name="grace">Grace</string>
+
+    <string name="label_text">Text</string>
+    <string name="label_brush">Brush</string>
+    <string name="msg_save_image">Are you want to exit without saving image ?</string>
+    <string name="label_eraser">Eraser</string>
+    <string name="label_eraser_mode">Eraser Mode</string>
+
+    <string name="title_notifications">Notifications</string>
+    <string name="title_featured">Featured</string>
+    <string name="title_tests">Tests</string>
+    <string name="title_myschool">My School</string>
+
+    <string name="notifi1">Timetable Reminder for Tommorow - <b>Swimming</b> Activity at school, do carry swimming costume.</string>
+    <string name="notifi2">Was <b>present</b> to school <b>on time</b></string>
+    <string name="notifi3">New Homework in <b>English</b> is added to Diary</string>
+    <string name="title_editimg">Edit Image</string>
+    <string name="title_changePassword">Change Password</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_reassign">Re-Assign</string>
+    <string name="action_republish">Re-Publish</string>
+    <string name="action_studentslist">Students List</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="sampleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci tempor dolor vitae tum pretium vitae. Ultrices accumsan eu vulputate sit mi. Sem mattis vitae, ut purus amet, feugiat in eu. Ante Lorem ipsum dolor sit amet.</string>
+
+
+    //jee main
+    <string name="jee_sh_pref">jeemains</string>
+    <string name="jee_email">jeechallenger2020@gmail.com</string>
+
+    <!--    Adv Jee-->
+    <string name="adv_sh_pref">jeeadvance</string>
+
+    //neet
+    <string name="neet_sh_pref">neetchallenger</string>
+
+    <string name="admission_number">Student Admission Number</string>
+    <string name="admission_number_hint">Enter Student Admission Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_hint">Enter Your Phone Number</string>
+    <string name="try_again">Live class does not started. Please try again!</string>
+    <string name="descriptive_questions_exceed">Descriptive answers already exceed the limit</string>
+    <string name="zm_accessbility_mfa_delete_digit_186496">delete digit %1$d, delete %2$s</string>
+    <string name="zm_accessbility_mfa_input_digit_186496">digit %1$d, edit %2$s</string>
+    <string name="zm_join_meeting_fail_dialog_msg_164409">%1$s (Error Code: %2$d)</string>
+    <string name="zm_text_mfa_sms_resend_176897">%1$s or %2$s</string>
+</resources>

@@ -1,0 +1,86 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#df494949"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="700"
+            android:text="Tap Here to record "/>
+
+        <ImageView
+            android:layout_margin="16dp"
+            android:padding="45dp"
+            android:src="@drawable/ic_mic_white"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/iv_record"
+            android:background="@drawable/bg_dashed_border_white"
+            tools:ignore="UseAppTint" />
+
+
+        <View
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lato"
+            android:textFontWeight="700"
+            android:text="Upload Your audio files "/>
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_dashed_border_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/ll_audio_file"
+            android:layout_width="200dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_file_audio"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Tap To Select Files."/>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

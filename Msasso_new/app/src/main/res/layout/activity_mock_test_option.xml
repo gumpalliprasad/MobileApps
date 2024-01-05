@@ -1,0 +1,110 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mock Tests"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tab_back_ground"
+        app:tabMode="fixed"
+        android:layout_marginTop="25dp"
+        app:tabGravity="fill"
+        android:visibility="visible"
+        app:tabBackground="@drawable/tab_layout_selector"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="#494949"
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@style/TabTextAppearance"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/bg_tab_back_ground">
+        <TextView
+            android:id="@+id/tv_cbse"
+            android:background="@drawable/bg_grad_tab_select"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CBSE"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="12dp"/>
+        <TextView
+            android:id="@+id/tv_iit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IIT Foundation"
+            android:textAllCaps="true"
+            android:textColor="#494949"
+            android:alpha="0.75"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_neet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEET Foundation"
+            android:textAllCaps="true"
+            android:textColor="#494949"
+            android:alpha="0.75"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_mock_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"/>
+
+
+
+</LinearLayout>

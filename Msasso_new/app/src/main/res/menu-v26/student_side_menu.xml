@@ -1,0 +1,83 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item-->
+<!--        android:iconTint="@null"-->
+<!--        android:id="@+id/navigation_live_classes"-->
+<!--        android:icon="@drawable/ic_live_classes_menu"-->
+<!--        android:title="Mock Tests" />-->
+
+<!--    <item-->
+<!--        android:iconTint="@null"-->
+<!--        android:id="@+id/navigation_practice"-->
+<!--        android:icon="@drawable/ic_live_classes_menu"-->
+<!--        android:title="Practice" />-->
+
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_circulars"
+        android:icon="@drawable/ic_circulars"
+        android:title="Circulars" />
+
+<!--    <item-->
+<!--        android:iconTint="@null"-->
+<!--        android:id="@+id/navigation_attendance"-->
+<!--        android:icon="@drawable/ic_live_classes_menu"-->
+<!--        android:title="Attendance" />-->
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_wishlist"
+        android:visible="false"
+        android:icon="@drawable/ic_menu_wish_list"
+        android:title="Wishlist" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_my_achievements"
+        android:visible="false"
+        android:icon="@drawable/ic_menu_achievements"
+        android:title="My Achievements" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_menu_report"
+        android:title="Report" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_personal_report"
+        android:icon="@drawable/ic_menu_personal_notes_icon"
+        android:title="Personal Notes" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_todo"
+        android:icon="@drawable/ic_menu_todo"
+        android:title="ToDo" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Gallery" />
+    <item
+        android:iconTint="@null"
+        android:visible="false"
+        android:id="@+id/navigation_feedback"
+        android:icon="@drawable/ic_menu_feedback"
+        android:title="Feedback" />
+
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_contact"
+        android:visible="false"
+        android:icon="@drawable/ic_menu_contact_us"
+        android:title="Contact Us" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_terms_conditions"
+        android:icon="@drawable/ic_menu_flat"
+        android:visible="false"
+        android:title="Terms &amp; Conditions" />
+    <item
+        android:iconTint="@null"
+        android:id="@+id/navigation_log_out"
+        android:icon="@drawable/ic_menu_logut_icon"
+        android:title="Logout" />
+
+</menu>
